@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- <div class=" d-flex bg-warning " > -->
+<div class=" d-flex flex-column vertical-center">
+	<form class="form-signin" style="width: 350px" action="/auth/" method="POST">
+		{% csrf_token %}
+		<!-- <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+		<h1 class="d-flex h3 mb-4 justify-content-center font-weight-normal">Biblioteca X</h1>
+		<!-- <h1 class="h3 mb-3 font-weight-normal">Entrar</h1> -->
+		<label for="inputEmail" class="sr-only">Email</label>
+		<input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email" required="" autofocus="">
+		<label for="inputPassword" class="sr-only">Senha</label>
+		<input name="password" type="password" id="inputPassword" class="form-control mb-2" placeholder="Senha" required="">
+		<div class="checkbox mb-1">
+			<label>
+				<input type="checkbox" value="remember-me"> Lembrar
+			</label>
+		</div>
+		<div class="d-flex mb-2 ">
+			<button class="btn btn-lg btn-primary btn-block w-100  h-100 mr-1 align-self-end" type="submit"
+				>Entrar</button>
+			<!-- <button class="btn btn-lg btn-success btn-block w-50  align-self-center" type="submit"
+				onclick="window.location.href='/cadastro'">Cadastrar</button> -->
+
+		</div>
+		<p><a href="/autenticar-user" class="text-primary">Esqueceu a senha?</a></p>
+		<!-- <script>
+			alert('{{ message }}');
+		</script> -->
+
+	</form>
+
+</div>
+
+
+
+
+
+<style>
+	.vertical-center {
+		min-height: 100%;
+		/* Fallback for browsers do NOT support vh unit */
+		min-height: 100vh;
+		/* These two lines are counted as one :-)       */
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+</style>
+
+{% endblock %}

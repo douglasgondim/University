@@ -1,0 +1,9 @@
+Procedimento insertionSort(A[1..n]){
+    Para (i de 2 Até n){
+        Enquanto(A[i] < A[i-1]){
+            int aux <- A[i-1]
+            A[i-1] <- A[i]
+            a[i] <- aux
+        }
+    }
+}

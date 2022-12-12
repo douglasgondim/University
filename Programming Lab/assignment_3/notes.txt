@@ -1,0 +1,42 @@
+should I start compressed file showing the number of characters? to identify end of file (compressed)
+file: <coding_technique> 00100010 10100000 11------
+
+I should probably use non fixed code size for each character
+
+way to decide when to stop looking (end of file)
+all of the symbols need to be a leaf node to avoid confusion
+
+to find an optimal coding_technique I need to count how many times each character appear
+it's best to build the tree from the bottom-up choosing the least occurring characters and summing up
+their weights(occurrences)
+
+you always make little trees of less weight and then merge them together, looking at the sum of the 
+already existing trees and the nodes left.
+
+at the end you have a full tree
+
+when you're decoding a huffman tree you return a symbol everytime you get to a leaf node.
+
+create int array of size 256 to count occurrences of characters in file. 
+A char is already an int. Increment the array in position char.
+char could be a signed integer (PROBLEM) --solve ny using unsigned char.
+
+Now that I've got the array, I need to create a new array of nodes to store
+the content of each position of the array as a node
+
+algorithm:
+
+1. Define the Huffman tree structure
+2. iterate the array inserting in a min heap
+3. 
+
+
+you need to differ a node that is or is not a character (check if it's a leaf node)
+
+[After you've got the Huffman Tree]
+
+read the original file again
+start decoding it character by character and printing into the outputfile
+byte by byte
+
+store characters code in an array of string

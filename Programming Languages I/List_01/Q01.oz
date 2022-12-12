@@ -1,0 +1,8 @@
+declare P1 P4 P8 P32 P100
+P1 = 2
+P4 = P1*P1*P1*P1
+P8 = P4*P4
+P32 = P8*P8*P8*P8
+P100 = P32*P32*P32*P4
+
+{Browse P100}

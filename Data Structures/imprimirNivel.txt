@@ -1,0 +1,18 @@
+José Douglas Gondim Soares, 485347
+
+Procedimento visitarPorNivel(T){
+    Se (T.raiz == NULO) retorna;
+    Fila fila;
+    adicionaFila(fila, T.raiz);
+    Enquanto (filaVazia(fila) == Falso){
+        No pop = removeFila(fila);
+        visita(pop);
+        Se (pop.esq) adicionaFila(fila, pop.esq);
+        Se (pop.dir) adicionaFila(fila, pop.dir);
+    }  
+}
+
+OBS: 
+T é uma Árvore Binária de Busca.
+Fila é uma estrutura de fila implementada em lista simplismente encadeada com add no fim e remover no início.
+No é um nó da ABB, com ponteiros esq, dir e chave.

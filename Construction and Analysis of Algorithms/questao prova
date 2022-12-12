@@ -1,0 +1,73 @@
+10 + 5*maxval
+
+max
+
+(10 + 5*maxva)l mod maxval = 10
+(10 + 5*maxval)/maxval = 5
+
+
+
+Procedimento Intercalação (V[1..m], V[m+1...n]){
+    i = 1, j = m+1, k = j, r = 1
+    max = V[1]
+    Enquanto r < n{
+        Se (V[r] > max){
+            max = V[r]
+        }
+    }
+    Enquanto( i<= n/2){
+        Se (V[i] > V[j]){
+            V[i] = V[j] + V[i]*max
+            j++
+            i++
+        }Senão{
+            V[i] = V[i] + V[j]*max
+            i++
+            j++
+            
+
+        }
+    }
+
+    i = 1, j = m+1, k = 1
+
+    Enquanto ( i <= m e j <=n){
+        Se (V[i] > V[j]){
+            A[k] = V[i];
+            i++;
+            k++
+        }Senão{
+            A[k] = V[j];
+            j++
+            k++
+        }
+
+        Enquanto (i<=m){
+            A[k] = V[i]
+            i++;
+            k++;
+
+        }
+        Enquanto (j<=n){
+            A[k] = V[j];
+            j++;
+            k++;
+        }
+        V[1..n] = A[1..n]
+    }
+
+
+
+        Enquanto ( i ≤ m ){
+            A[k] ← V[i];
+            i++
+            k++
+            }
+        Enquanto ( j ≤ n ){
+            A[k] ← V[j];
+            i++
+            k++
+        }
+    }
+    V[1..n] = A[1..n]
+}

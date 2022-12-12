@@ -1,0 +1,18 @@
+vai adicionando numa stirng e retorna true ou false sempre que achar uma palavra
+zera a string... se chegar no fim e nao achou palavra, retorna false
+
+
+paradoar
+
+para
+parado
+ar
+
+
+
+paradois
+
+para
+parado
+dois
+

@@ -1,0 +1,21 @@
+
+1. Derivação 20%
+OBS: Tarefa_1.2
+
+2. Fórmula de Newton-Cotes fechada 10%
+OBS: Tarefa_03
+
+3. Quadratura de Gauss-Legendre 15%
+OBS: Tarefa_05
+
+4. Método da potência com deslocamento 10%
+OBS: Tarefa_11
+
+5. Método QR 15%
+Tarefa_12
+
+6. Método de Runge-Kutta 10%
+Tarefa_13
+
+7. Método Preditor-Corretor 10%
+Tarefa_14

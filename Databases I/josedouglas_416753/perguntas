@@ -1,0 +1,132 @@
+
+1-) Quais os dependentes do funcionário com cpf 33344555587?
+select d.nome_dependente from funcionario as f join dependente as d on f.cpf = d.f_cpf where cpf="33344555587";
+
+2-) Quais funcionários trabalham no departamento de pesquisa?
+select f.p_nome, f.m_inicial, f.u_nome from funcionario as f join departamento as d on f.d_nr = d.d_numero where d.d_nome = "Pesquisa";
+
+
+3-) Quem é o gerente do departamento de número 4?
+select f.p_nome, f.m_inicial, f.u_nome from funcionario as f join departamento as d on f.d_nr = d.d_numero where d.cpf_gerente = f.cpf and d.d_numero=4;
+
+4-) Qual o endereço dos funcionários que ganham mais que 40.000 por ano?
+select f.endereco from funcionario as f where f.salario > 40000;
+
+5-) Quantos funcionários do sexo masculino trabalham na empresa?
+select count(*) from funcionario as f where f.sexo="M";
+
+6-) Qual o nome dos projetos que têm a cidade de São Paulo como local?
+select p.proj_nome from projeto as p where p.proj_local="São Paulo";
+
+7-) Qual o primeiro e último nome dos funcionários que trabalham no projeto ProdutoY?
+select f.p_nome, f.u_nome from (funcionario as f join trabalha_em as t on f.cpf=t.f_cpf) join projeto as p on p.proj_numero=t.p_nr where proj_nome="ProdutoY";
+
+8-) Quantos dependentes tem o funcionário João Silva?
+select count(*) from funcionario as f join dependente as d on f.cpf=d.f_cpf where f.p_nome="João" and f.u_nome="Silva";
+
+9-) Quantas horas por semana são trabalhadas no projeto de nome Reorganização?
+select sum(t.horas) from trabalha_em as t join projeto as p on t.p_nr=p.proj_numero where p.proj_nome="Reorganização";
+
+10-) Qual o primeiro e ultimo nomes e cpf dos funcionários trabalham no projeto com nome de Informatização?
+select f.p_nome, f.u_nome, f.cpf from funcionario as f join trabalha_em as t on f.cpf=t.f_cpf join projeto as p on t.p_nr = p.proj_numero where p.proj_nome="Reorganização";
+
+11-) Qual o primeiro e ultimo nomes do funcionário mais velho da empresa?
+select f.p_nome, f.u_nome from funcionario as f where f.data_nasc=(select min(f.data_nasc) from funcionario as f);
+
+12-) Qual o nome do projeto de número 10?
+select p.proj_nome from projeto as p where p.proj_numero = 10;
+
+
+13-) Quais os departamentos localizados em São Paulo?
+select d.d_nome from departamento as d join localizacao_dep as l on d.d_numero=l.d_numero where l.d_local="São Paulo";
+
+14-) Qual o primeiro e ultimo nomes e cpf do funcionário que é gerente a menos tempo na empresa?
+select f.p_nome, f.u_nome, f.cpf from funcionario as f join departamento as d on f.d_nr = d.d_numero where f.cpf = (select d.cpf_gerente from departamento as d where d.data_inicio_gerente = (select max(d.data_inicio_gerente) from departamento as d));
+
+15-) Quantas pessoas trabalham no projeto de número 1?
+select count(*) from trabalha_em as t join projeto as p on t.p_nr = p.proj_numero where p.proj_numero=1;
+
+16-) Qual o ultimo nome do funcionário com maior salário na empresa?
+select f.u_nome from funcionario as f  where f.salario= (select max(salario) from funcionario as f);
+
+17-) Qual o primeiro nome do funcionário com menor salário na empresa:?
+ select f.p_nome from funcionario as f  where f.salario= (select min(salario) from funcionario as f);
+
+18-) Quantos funcionários tem a empresa?
+select count(*) from funcionario;
+
+19-) Qual o cpf dos funcionários que trabalham no departamento de Administração?
+select f.cpf from funcionario as f join departamento as d on f.d_nr=d.d_numero where d.d_nome="Administração";
+
+20-) Quantos projetos tem a empresa?
+select count(*) from projeto;
+
+21-) Quantos tipos de departamentos diferentes tem  a empresa?
+select count(*) from departamento;
+
+22-) Qual o nome dos projetos localizados em Mauá?
+select p.proj_nome from projeto as p where p.proj_local="Mauá";
+
+23-) Qual a média salarial de quem trabalha no departamento de Pesquisa?
+ select avg(f.salario) from funcionario as f where f.d_nr = 5;
+
+24-) Quais funcionários o supervisor Fernando Wong supervisa?
+select f.p_nome, f.u_nome from funcionario as f where cpf_supervisor=(select f.cpf from funcionario as f where f.p_nome="Fernando" and f.u_nome="Wong");
+
+25-) Qual o parentesco de Alicia com  o funcionário de cpf 33344555587?
+select d.parentesco from dependente as d where d.f_cpf = 33344555587 and d.nome_dependente="Alicia";
+
+26-) Qual a data de nascimento de Joice Leite?
+select f.data_nasc from funcionario as f where f.p_nome="Joice" and f.u_nome="Leite";
+
+27-) Quais funcionários trabalham em São Paulo?
+select f.p_nome, f.u_nome from (funcionario as f join trabalha_em as t on f.cpf=t.f_cpf) join projeto as p on t.p_nr=p.proj_numero where proj_local="São Paulo";
+
+28-) Quantas horas por semana trabalha a funcionária Jennifer Souza?
+select sum(t.horas) from trabalha_em as t join funcionario as f on f.cpf=t.f_cpf where f.p_nome="Jennifer" and f.u_nome="Souza";
+
+29-) Em quais projetos trabalha o funcionário Fernando Wong?
+select p.proj_nome from (projeto as p join trabalha_em as t on p.proj_numero=t.p_nr) join funcionario as f on t.f_cpf=f.cpf where f.p_nome="Fernando" and f.u_nome = "Wong";
+
+30-) Qual a soma dos salários de todos os funcionários que trabalham no departamento de pesquisa?
+select sum(f.salario) from funcionario as f join departamento as d on f.d_nr = d.d_numero  where d.d_nome = "Pesquisa";
+
+31-) Quem trabalha no departamento de Administração?
+select f.p_nome, f.m_inicial, f.u_nome from funcionario as f join departamento as d on f.d_nr = d.d_numero where d.d_nome = "Administração";
+
+32-) Quantos funcionários nasceram antes de 1960?
+select count(*) from funcionario as f where f.data_nasc < '1960-01-01';
+
+33-) Quantos dependentes do sexo masculino existem na empresa?
+select count(*) from dependente as d where d.sexo="M";
+
+34-) Quando nasceu a esposa de João Silva?
+select d.data_nasc from dependente as d join funcionario as f on d.f_cpf = f.cpf where f.p_nome = "João" and f.u_nome = "Silva" and d.parentesco = "Esposa";
+
+35-) Quais funcionários não possuem supervisor?
+select f.p_nome, f.u_nome from funcionario as f where f.cpf_supervisor is NULL;
+
+36-) Quem é o dependente mais velho da empresa?
+mysql> select d.nome_dependente from dependente as d where d.data_nasc = (select min(d.data_nasc) from dependente as d);
+
+37-) Qual o nome do departamento responsável pelo projeto Novosbenefícios?
+select d.d_nome from departamento as d join projeto as p on d.d_numero = p.d_num where p.proj_nome = "Novosbenefícios";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+<button type="button" data-toggle="modal" class="d-flex m-2 align-items-start backgroundColor"
+    data-target=#{{ livro.titulo }}>
+    <div class="d-flex flex-column align-items-center " style="width:220px; background-color: #fff">
+        <img src={{ livro.capa }} class="img-fluid d-block " alt="Responsive image" style="width:150px; height: 220px">
+        <div class="rounded d-flex flex-column  align-items-start my-1 mx-1 " style="background-color: #fff">
+            <h7 class="d-flex flex-wrap"><b>Autor(a):&nbsp</b>{{ livro.nome_autor }}</h7>
+            <h7 class="d-flex flex-wrap  "><b>Título:&nbsp</b> {{ livro.titulo }}</h7>
+            {% if reserva %}
+            <h7 class="d-flex flex-wrap"><b>Código da Reserva:&nbsp</b>{{ livro.codigo_reserva }}</h7>
+            <h7 class="d-flex flex-wrap"><b>Expira em:&nbsp</b>{{ livro.data_limite_reserva }}</h7>
+            <h7 class="d-flex flex-wrap"><b>Disponível:&nbsp</b>{{ livro.disponivel }}</h7>
+            <!-- <h7><b>Título:</b> Amanhecer</h7>
+            <h7><b>Título:</b> Amanhecer</h7> -->
+            {% endif %}
+            {% if emprestimo %}
+            <h7 class="d-flex flex-wrap "><b>Código do Empréstimo:&nbsp</b>{{ livro.codigo_emprestimo }}</h7>
+            <h7 class="d-flex flex-wrap"><b>Devolver até:&nbsp</b> {{ livro.data_limite_devolucao }}</h7>
+            <!-- <h7><b>Título:</b> Amanhecer</h7>
+            <h7><b>Título:</b> Amanhecer</h7> -->
+            {% endif %}
+            <!-- <script>console.log(acervo)</script> -->
+            <!-- <h7><b>Exemplares Disponíveis:</b> 9</h7> -->
+        </div>
+
+    </div>
+</button>
+
+<div class="modal fade" id={{ livro.titulo }} tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">{{ livro.nome_autor }} - {{ livro.titulo }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <img src={{ livro.capa }} class="img-fluid d-block " alt="Responsive image"
+                    style="width:150px; height: 220px">
+                
+                        
+            </div>
+            <div class="modal-body d-flex flex-column ">
+                <p class="px-3 pt-3"><b>Sumario: </b>{{ livro.sumario }}</p>
+                <p class="px-3"><b>Autor: </b>{{ livro.nome_autor }}</p>
+                <p class="px-3"><b>Titulo: </b>{{ livro.titulo }}</p>
+                <!-- <p class="px-3 "><b>Editora: </b>{{ livro. }}</p> -->
+                <p class="px-3"><b>Gênero: </b>{{ livro.genero }}</p>
+                <p class="px-3"><b>Número de Páginas: </b>{{ livro.num_pags }}</p>
+                <p class="px-3"><b>País: </b>{{ livro.pais }}</p>
+                <p class="px-3"><b>Ano de Publicação: </b>{{ livro.ano_publicacao }}</p>
+                <p class="px-3"><b>Palavras-Chave: </b>{{ livro.palavras_chave }}</p>
+                
+
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                {% if reserva %} 
+                <form class="cancelar-reserva-form-ajax" >
+                    <input type="hidden" name="buttonAction" value="cancelar_reserva">
+                    <input type="hidden" name="codigo_reserva" value="{{ livro.codigo_reserva }}">
+                    <button type="submit" class="btn btn-danger" >Cancelar Reservar</button>
+                </form>
+                {% elif emprestimo %}
+                <form class="renovar-emprestimo-form-ajax " >
+                    <input type="hidden" name="buttonAction" value="renovar_emprestimo">
+                    <input type="hidden" name="codigo_reserva" value="{{ livro.codigo_emprestimo }}">
+                    <button type="submit" class="btn btn-success">Renovar Empréstimo</button>
+                 </form>
+                {% else %}
+                <form class="fazer-reserva-form-ajax " >
+                    <input type="hidden" name="livro_cod" value="{{livro.pk_cod_livro}}">
+                    <input type="hidden" name="qtd_exemplare_disp" value="{{livro.qtd_exemp}}">
+                    <input type="hidden" name="buttonAction" value="reservar">
+                    <button type="submit" class="btn btn-primary" >Reservar</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 
+{% if reserva %}
+<style>
+    .backgroundColor {
+        background-color: #005FA8;
+    }
+</style>
+{% elif emprestimo %}
+<style>
+    .backgroundColor {
+        background-color: #008B00;
+    }
+</style>
+
+
+{% else %}
+<style>
+
+</style>
+
+{% endif %} -->

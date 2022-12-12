@@ -1,0 +1,82 @@
+avaliação 3 CANA
+
+1-)
+
+a)
+A solução consiste em:
+
+Procedimento coberturaIntervalos(Pontos[x1..xn]){
+    mergeSort(Pontos[x1..xn]); // ordenar por valor, caso não esteja ordenado.
+    intervalos = [];
+
+    Para (i de x1 até xn){
+        Se (i.coberto == false){
+            addNovoIntervalo(Pontos[x1..xn], intervalos, i);
+        }
+    }
+    retorna intervalos;
+}
+
+Algoritmo addNovoIntervalo(Pontos[x1..xn], intervalos, inicioIntervalo){
+    intervalos.addFinal( novo intervalo(inicioIntervalo.valorPonto, inicioIntervalo.valorPonto + 1));
+    Para (i de inicioIntervalo até xn){
+        Se (i.valorPonto < inicioIntervalo.valorPonto + 1){
+            i.coberto = true;
+        }
+        break;
+    }
+}
+
+b)
+
+Como cada intervalo é iniciado exatamente no começo de um ponto, podemos argumentar que nunca se é desperdiçado espaço
+à esquerda de um ponto. Isso significa que cada intervalo cobre o máximo de pontos possíveis do seu início ao fim.
+
+Assumindo uma solução S encontrada pelo algoritmo e uma solução T qualquer.
+
+Se s1 != t1, isso significa que t1 não começa exatamente em um dos pontos e então espaço à esquerda está sendo desperdiçado.
+Como consequência, t1 pode não cobrir a mesma quantidade de pontos que s1. Logo, o algoritmo de T não fez uma escolha ótima naquele momento.
+
+A cada momento que tx é diferente de sx, espaço é desperdiçado, o que leva a provavel necessidade de mais intervalos para cobrir os pontos.
+
+se substituirmos t1 por s1, veremos que provavelmente cobriremos mais pontos naquele momento e podemos arrastar todas as soluções de T um pouco mais
+para a direita. O que pode deixar intervalos que não cobrem ponto algum no final.
+
+Conclusão: S <= T.      
+
+
+2-)
+a)
+
+// obs: ordem de prioridade sempre >= 1. Quanto maior, maior prioridade.
+
+Procedimento esperaPioridade(Programas[1..n]){
+    Para (i de 1 até n){
+        Programas[i].tempoPonderado = Programas[i].tempo / Programas[i].prioridade
+    }
+    mergeSort(Programas) // por ordem de tempoPonderado
+    retorna Programas
+}
+
+b)
+
+A solução aqui parece extremamente simples, por isso não estou totalmente seguro.
+
+Mas o problema da prioridade pode ser ser resolvido calculando um tempo ponderado da execução de cada programa (tempo/prioridade).
+Dessa forma, não precisamos mais nos preocupar com ordem de prioridade, pois tecnicamente, todos os programas agora têm a mesma prioridade.
+
+Logo, a escolha gulosa óbvia é o programa que possui menor tempo ponderado.
+
+Assumindo uma solução S encontrada pelo algoritmo e uma solução T qualquer:
+
+Se s1 é diferente de t1, logo já podemos assumir que t1 tem um tempo ponderado maior que s1, pois s1 é o menor de todos.
+
+Sabendo disso, não é difícil ver que se trocarmos t1 de posição com o programa equivalente a s1, dentro da solução T, diminuimos o somatório
+final dos tempos, ou pelo menos, ele fica igual. Isso mostra que s1 é uma escolha gulosa ótima para aquele momento.
+
+Fazendo isso mais vezes, veremos que a solução T sempre será maior ou igual a solução S e 
+podemos concluir que a solução S é uma solução ótima para o problema.
+
+
+
+

@@ -1,0 +1,57 @@
+1- Um programa é uma aplicação que é composta por diferentes processos. Os processos são os serviços que a aplicação precisa para executar.
+
+2- Processos são criados na inicialização do sistema, pode ser criado por um outro processo que está executando, pelo próprio usuário ou pelo inicio de uma tarefa em lote.
+
+3- Um processo pode terminar por que ele chegou ao seu fim (voluntário), pode terminar porque encontrou um erro que já havia sido tratado (voluntário), por um erro fatal (Ex: divisão por 0)(involuntário) ou por um outro processo que tem permissão para finaliza-lo.
+
+4- a) 
+Em execução quer dizer que o processo está na CPU, executando. 
+
+Pronto, quer dizer que o processo está pronto para ser executado mas ele ainda não foi escalonado para executar.
+
+Bloqueado quer dizer que o processo está dormindo e esperando um evento externo para acordar.
+
+b) Transição 1 é quando um processo vai dormir Sleep();
+Transição 2 é quando um processo é retirado da CPU pelo escalonador para a execução de um outro processo.
+A transição 3 é quando um processo é colocado na CPU para executar porque chegou a vez dele.
+A transição 4 é quando um processo é acordado por um processo externo. Wakeup();.
+
+c) Porque um processo que está bloqueado, precisa primeiro entra na fila de escalonamento para depois executar, por exemplo. Um processo também precisa estar executando para ser bloqueado.
+
+5- O SO possui uma tabela de processos onde cada processo possui seu proprio bloco de controle onde ficam armazenado seu status, contador de programa, valores dos registradores, informações de escalonamento, tempo de E/S, tempo de execução, etc...
+
+6- fork() - duplica um processo em execução e atribui id 0 ao seu filho.
+execve() - executa um processo(substitui o que está atualmente execuntado).
+wait() - espera um processo filho finalizar execução.
+exit() - finaliza a execução do processo e devolve status.
+
+7- 2 elevado a 3, 8 processos.
+
+8-
+
+9-
+a) 15/ 15+200 ≃ 7%
+b) 15/ 15+400 ≃ 4%
+c) O problema é que o tempo de resposta fica maior.
+
+10- Uma thread é entre 10 e 100 vezes mais leve e rápida do que um processo. Threads compartilham o mesmo espaço de memória, processo compartilham os recursos da máquina. Uma thread é muitas vezes chamada de um micro processo, pois ela divide um processo em caminhos diferentes de execução que possibilitam o paralelismo e ganho de desempenho em CPUs com múltiplos núcleos.
+
+11- Porque em CPUs com mais de um núcleo, ele pode usurfruir do paralelismo real para executar mais rapidamente.
+
+12- Elas possuem sua própria pilha, contador de programa, registradores e estado.  
+
+13- O SO não sabe da existência das threads de usuário, já as threads de núcleo ele tem conhecimento e às gerencia em seu escalonamento, por exemplo.
+
+14- A vatagem da thread de usuário é que o SO não precisa se preocupar com ela e o programador pode escalona-las da forma que quiser, e a desvantagem é que se o processo for bloqueado, todas as threads também são.
+
+A vantagem da thread núcleo é que se uma thread for bloqueada, as outras threads do processo continuam operantes. A desvantagem é que o desempenho cai, uma vez que chamadas de sistema são caras.
+
+15-
+
+16- a) pthread_create cria uma nova thread.
+b) pthread_exit finaliza a thread.
+c) pthread_join espera que uma thread especifica termine de executar.
+d) pthread_yeild libera a CPU para que outra thread possa executar.
+
+17 -
+ 

@@ -1,0 +1,42 @@
+LISTA 1
+
+3- Sistemas monoprogramáveis são aqueles que só podem executar um programa de cada vez, eles não permitem a troca de processos na CPU como na multiprogramação. Um dos motivos de esse ter sido o primeiro tipo de sistema é por causa da baixa capacidade de armazenamento das máquinas da época.
+Ele causa desperdício de hardware.
+
+4- São sistemas que permitem a alternância entre processos (Ilusão de executar mais de um programa por vez). Eles precisam de um escalonador e um algorítmo de escalonamento para a troca de processos. Os recursos da máquina são compartilhados entre os diversos usuários e aplicações.
+Eles são mais eficientes que os sistemas monoprogramáveis e o tempo de resposta é reduzido.
+
+5- Sistemas multiprogramáveis pode ser classificados em
+
+Batch: Foca em processos orientados a CPU. Diferentemente dos sistemas interativos, a alternancia entre processos é muito menor e executa os processos de forma sequencial. Não necessita de interações do usuário.
+
+Interativos: O foco está no tempo de resposta rápido para a interação com o usuário ficar melhor. Troca contantemente de processos e processos orientados a  E/S possuem prioridade na CPU.
+
+Tempo Real: Este foca em processar as informações que o são alimentadas periodicamente ou aperiodicamente de modo que seja o mais preciso possível. Os processos não estão competindo entre si, e é melhor descartar um processamento do que atrasar os outros. O tempo é essencial, sendo que nos sistemas de tempo real crítico, atrasos são inaceitáveis, e em sistemas de tempo real não crítico, eles são toleráveis mas ainda indesejados.
+
+6- A vantagem é que com múltiplos núcleos é possivel alcançar um paralelismo verdadeiro, ou seja, de fato executar mais de um programa ao mesmo tempo. O que torna o computador mais rápido e eficiente. O tempo de resposta também será muito superior ao de um sistema monoprogramável.
+
+7- Sistemas fortemente acoplados compartilham a mesma memória, o que possibilita uma comunicação mais rápida e menos complexa entre as CPUs. Os sistemas fracamente acoplados são computadores independentes conectados entre si através de um cabo de rede, ou seja, não compartilham a mesma memória.
+
+8- Uma chamada de sistema é quando um usuário quer fazer algo que só pode ser feito em modo núcleo, então ele pede ao SO, através de uma chamada de sistema, para realizar aquela ação.
+Exemplos: open, read, write, fork, execve, wait, kill, exit.
+
+9- O modo núcleo é aquele que tem total acesso ao hardware da máquina, ou seja, não tem limitações sobre o que pode ou não fazer. O modo usuário não tem acesso a todas as instruções do hardware e por ser uma camada superior, precisa pedir para o SO através de chamadas de sistemas para utilizar alguns serviços que estão restritos ao modo núcleo.
+
+10- Durante uma chamada de sistema, o usuário faz a solicitação ao SO do serviço restrito que ele deseja utilizar, o SO então executa tal serviço em modo núcleo e retorna com a resposta para o usuário. Isso restringe o que o usuário pode fazer, com a intenção de previnir erros e garantir a integridade do sistema.
+
+11- a) Sistemas monolíticos são aqueles que executam tudo em modo núcleo, ou seja, apesar de serem muito rápidos e eficientes, um erro pode acarretar no comprometimento do sistema inteiro.
+
+b) O sistema de camadas, é aquele que utiliza várias camadas a modo de estruturar uma hierarquia. Uma chamada superior só pode se comunicar com aquela diretamente inferior a ela, ou seja, você pode precisar passar por várias camadas até chegar no serviço que deseja. Isso traz mais segurança para o sistema, uma vez que um erro afetaria apenas uma camada e não comprometeria o sistema inteiro, no entanto, como você precisa se comunicar com várias camadas, isso torna o sistema mais lento.
+
+c) O sistema micronúcleos, é aquele que divide o SO em módulos pequenos (gerenciador de memória, interprocessod e comunicações, escalonador), onde cada um deles opera em modo núcleo. A vantagem é que um erro em um desses módulos não acarretará no colapso total do sistema, no entanto, a performance é comprometida por causa da comunicação entre os módulos que é feita através da passagem de mensagens.
+
+d) O modelo cliente servidor é aqueles que possuem um cliente e um servidor e esses trocam mensagens entre si. É uma variação do micronúcleo. Requisições.
+
+12- Uma máquina virtual é um software que interpreta (copia) um hardware para que ele possa rodar mais de um sistema operacional.
+
+13- O tipo 1, é aquele que faz a tradução logo na inicialização da máquina, independente do SO que está instalado nela, interage diretamente com o hardware. O tipo 2, é aquele que faz a simulação dentro de um SO (virtual box). 
+
+ 
+
+

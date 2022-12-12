@@ -1,0 +1,99 @@
+Lista 15
+
+2-)
+a)
+
+Procedimento acharParadas(postos[1..n], L){
+    paradas = [postos[1]];
+    ultimaParada = postos[1].distancia;
+
+    i = 1
+    Enquanto (i <= n){
+        Se (postos[i+2].distancia - ultimaParada > L){
+            paradas.addFinal(postos[i]);
+            ultimaParada = postos[i];
+        }
+        i++
+    }
+    retorna paradas;
+
+}
+
+b)
+O algoritmo sempre pergunta se o carro consegue ir da última parada i até a parada i +2.
+Se a resposta for sim, então ele não para na parada i + 1.
+Se a respota for não, ele para na parada i + 1.
+Dessa forma, ele sempre escolhe um posto apenas de for realmente necessário abastecer.
+No final, teremos uma lista de paradas ótima.
+
+3-)
+a)
+
+Procedimento alocaSalas(salas[1..n], atividades[1..k]){
+    atividadesOrdenadasInicio = mergeSort(atividades)  // ordem de inicio
+
+    Para (i de 1 até k){
+        Para j de (1 até n){
+            Se(salas[j].atividadeAtual.fim < atividadesOrdenadasInicio[i].comeco){
+                salas[j].atividadeAtual = atividadesOrdenadasInicio[i]
+                salas[j].atividadesAlocadas.addFinal(atividadesOrdenadasInicio[i]);
+                break;
+            }
+        }
+
+    }
+
+    retorna salas
+}
+
+b) Como ele sempre aloca a próxima atividade para a próxima sala disponível iterando a partir da sala 1,
+é fácil ver que o menor número de salas necessárias estará alocado em qualquer momento de execução do algoritmo.
+
+
+{4,6,7,9,10,11,12,17}
+
+17, 12 = 5 => {4, (17-12), 6, 7, 9, 10, 11}
+
+11, 10 = 1 => {(11-10), 4, (17-12), 6, 7, 9}
+
+9, 7 = 2 => {(11-10), (9-7), 4, (17-12), 6}
+
+6, (17-12) = 1 => {(11-10), (6 - (17-12)), (9-7), 4}
+
+4, (9-7) = 3 => {(11-10), (6 - (17-12)), (4 - (9-7))}
+
+(4 - (9-7)), (6 - (17-12)) = 0 => {(4 - (9-7)) - (6 - (17-12)), (11 -10)}
+
+(11 -10), (4 - (9-7)) - (6 - (17-12)) = { (11 -10) - ((4 - (9-7)) - (6 - (17-12)))}
+
+
+
+(11 -10) - (((4 - (9-7)) - (6 - (17-12)))) =
+
+(11 -10), (4 - (9-7)) - (6 - (17-12)) =
+
+
+(4 - (9-7)) e (6 - (17-12))
+
+
+(11-10)
+
+(4 - (9-7)) - (6 - (17-12))
+
+(4 - (9-7))
+(6 - (17-12))
+
+4
+(9-7)
+
+6
+(17-12)
+
+
+
+
+
+{11, 7, 12,6}
+{10, 9, 17,4}
+
+

@@ -1,0 +1,33 @@
+INICIO
+	INTEIRO: X1, V1, X2, V2;
+	LEIA(X1, V1, X2, V2);
+	SE (V1=V2) ENTAO
+		SE (X1 = X2) ENTAO
+			ESCREVA("Sim");
+		SENAO
+			ESCREVA("NAO");
+		FIMSE;
+	SENAO
+		SE ((X2-X1) MOD(V1-V2) = 0 E (X2-X1)/(V1-V2) >= 0)
+			ESCREVA("Sim");
+		SENAO
+			ESCREVA("Não")
+		FIMSE;
+	FIMSE;
+FIM.
+
+
+// logic
+
+x1 + n * v1 = x2 + n * v2
+restrictions:
+n is nonnegative N > 0
+n is an integer (x2-x1) mod(v1-v2)=0
+
+n * v1 - n * v2 = x2 - x1
+n *(v1-v2) = (x2-x1)
+n = (x2-x1)/(v1-v2)
+
+if v1=v2
+check if x1=x2
+

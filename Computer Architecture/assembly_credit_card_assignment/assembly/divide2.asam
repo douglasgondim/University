@@ -1,0 +1,14 @@
+.data
+
+.text
+	addi $t0, $zero, 35
+	addi $t1, $zero, 6
+	
+	div $t0, $t1
+	
+	mflo $s0	#quocient
+	mfhi $s1	#remainder
+	
+	li $v0, 1
+	move $a0, $s1
+	syscall

@@ -1,0 +1,1106 @@
+{
+   "abaiara": {
+      "cidade": "Abaiara",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "acarape": {
+      "cidade": "Acarape",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "acarau": {
+      "cidade": "Acaraú",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "acopiara": {
+      "cidade": "Acopiara",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aiuaba": {
+      "cidade": "Aiuaba",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "alcantaras": {
+      "cidade": "Alcântaras",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "altaneira": {
+      "cidade": "Altaneira",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "alto santo": {
+      "cidade": "Alto Santo",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "amontada": {
+      "cidade": "Amontada",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "antonina do norte": {
+      "cidade": "Antonina do Norte",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "apuiares": {
+      "cidade": "Apuiarés",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aquiraz": {
+      "cidade": "Aquiraz",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aracati": {
+      "cidade": "Aracati",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aracoiaba": {
+      "cidade": "Aracoiaba",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ararenda": {
+      "cidade": "Ararendá",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "araripe": {
+      "cidade": "Araripe",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aratuba": {
+      "cidade": "Aratuba",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "arneiroz": {
+      "cidade": "Arneiroz",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "assare": {
+      "cidade": "Assaré",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "aurora": {
+      "cidade": "Aurora",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "baixio": {
+      "cidade": "Baixio",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "banabuiu": {
+      "cidade": "Banabuiú",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "barbalha": {
+      "cidade": "Barbalha",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "barreira": {
+      "cidade": "Barreira",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "barro": {
+      "cidade": "Barro",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "barroquinha": {
+      "cidade": "Barroquinha",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "baturite": {
+      "cidade": "Baturité",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "beberibe": {
+      "cidade": "Beberibe",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "bela cruz": {
+      "cidade": "Bela Cruz",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "boa viagem": {
+      "cidade": "Boa Viagem",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "brejo santo": {
+      "cidade": "Brejo Santo",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "camocim": {
+      "cidade": "Camocim",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "campos sales": {
+      "cidade": "Campos Sales",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "caninde": {
+      "cidade": "Canindé",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "capistrano": {
+      "cidade": "Capistrano",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "caridade": {
+      "cidade": "Caridade",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "carire": {
+      "cidade": "Cariré",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "caririacu": {
+      "cidade": "Caririaçu",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "carius": {
+      "cidade": "Cariús",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "carnaubal": {
+      "cidade": "Carnaubal",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "cascavel": {
+      "cidade": "Cascavel",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "catarina": {
+      "cidade": "Catarina",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "catunda": {
+      "cidade": "Catunda",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "caucaia": {
+      "cidade": "Caucaia",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "cedro": {
+      "cidade": "Cedro",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "chaval": {
+      "cidade": "Chaval",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "choro": {
+      "cidade": "Choró",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "chorozinho": {
+      "cidade": "Chorozinho",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "coreau": {
+      "cidade": "Coreaú",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "crateus": {
+      "cidade": "Crateús",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "crato": {
+      "cidade": "Crato",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "croata": {
+      "cidade": "Croatá",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "cruz": {
+      "cidade": "Cruz",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "deputado irapuan pinheiro": {
+      "cidade": "Deputado Irapuan Pinheiro",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "erere": {
+      "cidade": "Ereré",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "eusebio": {
+      "cidade": "Eusébio",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "farias brito": {
+      "cidade": "Farias Brito",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "forquilha": {
+      "cidade": "Forquilha",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "fortaleza": {
+      "cidade": "Fortaleza",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "fortim": {
+      "cidade": "Fortim",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "frecheirinha": {
+      "cidade": "Frecheirinha",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "general sampaio": {
+      "cidade": "General Sampaio",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "graca": {
+      "cidade": "Graça",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "granja": {
+      "cidade": "Granja",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "granjeiro": {
+      "cidade": "Granjeiro",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "groairas": {
+      "cidade": "Groaíras",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "guaiuba": {
+      "cidade": "Guaiúba",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "guaraciaba do norte": {
+      "cidade": "Guaraciaba do Norte",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "guaramiranga": {
+      "cidade": "Guaramiranga",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "hidrolandia": {
+      "cidade": "Hidrolândia",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "horizonte": {
+      "cidade": "Horizonte",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ibaretama": {
+      "cidade": "Ibaretama",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ibiapina": {
+      "cidade": "Ibiapina",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ibicuitinga": {
+      "cidade": "Ibicuitinga",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "icapui": {
+      "cidade": "Icapuí",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ico": {
+      "cidade": "Icó",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "iguatu": {
+      "cidade": "Iguatu",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "independencia": {
+      "cidade": "Independência",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ipaporanga": {
+      "cidade": "Ipaporanga",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ipaumirim": {
+      "cidade": "Ipaumirim",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ipu": {
+      "cidade": "Ipu",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ipueiras": {
+      "cidade": "Ipueiras",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "iracema": {
+      "cidade": "Iracema",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "iraucuba": {
+      "cidade": "Irauçuba",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itaicaba": {
+      "cidade": "Itaiçaba",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itaitinga": {
+      "cidade": "Itaitinga",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itapaje": {
+      "cidade": "Itapajé",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itapipoca": {
+      "cidade": "Itapipoca",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itapiuna": {
+      "cidade": "Itapiúna",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itarema": {
+      "cidade": "Itarema",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "itatira": {
+      "cidade": "Itatira",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jaguaretama": {
+      "cidade": "Jaguaretama",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jaguaribara": {
+      "cidade": "Jaguaribara",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jaguaribe": {
+      "cidade": "Jaguaribe",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jaguaruana": {
+      "cidade": "Jaguaruana",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jardim": {
+      "cidade": "Jardim",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jati": {
+      "cidade": "Jati",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jijoca de jericoacoara": {
+      "cidade": "Jijoca de Jericoacoara",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "juazeiro do norte": {
+      "cidade": "Juazeiro do Norte",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "jucas": {
+      "cidade": "Jucás",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "lavras da mangabeira": {
+      "cidade": "Lavras da Mangabeira",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "limoeiro do norte": {
+      "cidade": "Limoeiro do Norte",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "madalena": {
+      "cidade": "Madalena",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "maracanau": {
+      "cidade": "Maracanaú",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "maranguape": {
+      "cidade": "Maranguape",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "marco": {
+      "cidade": "Marco",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "martinopole": {
+      "cidade": "Martinópole",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "massape": {
+      "cidade": "Massapê",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "mauriti": {
+      "cidade": "Mauriti",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "meruoca": {
+      "cidade": "Meruoca",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "milagres": {
+      "cidade": "Milagres",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "milha": {
+      "cidade": "Milhã",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "miraima": {
+      "cidade": "Miraíma",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "missao velha": {
+      "cidade": "Missão Velha",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "mombaca": {
+      "cidade": "Mombaça",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "monsenhor tabosa": {
+      "cidade": "Monsenhor Tabosa",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "morada nova": {
+      "cidade": "Morada Nova",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "moraujo": {
+      "cidade": "Moraújo",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "morrinhos": {
+      "cidade": "Morrinhos",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "mucambo": {
+      "cidade": "Mucambo",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "mulungu": {
+      "cidade": "Mulungu",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "nova olinda": {
+      "cidade": "Nova Olinda",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "nova russas": {
+      "cidade": "Nova Russas",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "novo oriente": {
+      "cidade": "Novo Oriente",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ocara": {
+      "cidade": "Ocara",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "oros": {
+      "cidade": "Orós",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pacajus": {
+      "cidade": "Pacajus",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pacatuba": {
+      "cidade": "Pacatuba",
+      "mesorregiao": "Metropolitana de Fortaleza",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pacoti": {
+      "cidade": "Pacoti",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pacuja": {
+      "cidade": "Pacujá",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "palhano": {
+      "cidade": "Palhano",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "palmacia": {
+      "cidade": "Palmácia",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "paracuru": {
+      "cidade": "Paracuru",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "paraipaba": {
+      "cidade": "Paraipaba",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "parambu": {
+      "cidade": "Parambu",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "paramoti": {
+      "cidade": "Paramoti",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pedra branca": {
+      "cidade": "Pedra Branca",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "penaforte": {
+      "cidade": "Penaforte",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pentecoste": {
+      "cidade": "Pentecoste",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pereiro": {
+      "cidade": "Pereiro",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pindoretama": {
+      "cidade": "Pindoretama",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "piquet carneiro": {
+      "cidade": "Piquet Carneiro",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "pires ferreira": {
+      "cidade": "Pires Ferreira",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "poranga": {
+      "cidade": "Poranga",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "porteiras": {
+      "cidade": "Porteiras",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "potengi": {
+      "cidade": "Potengi",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "potiretama": {
+      "cidade": "Potiretama",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "quiterianopolis": {
+      "cidade": "Quiterianópolis",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "quixada": {
+      "cidade": "Quixadá",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "quixelo": {
+      "cidade": "Quixelô",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "quixeramobim": {
+      "cidade": "Quixeramobim",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "quixere": {
+      "cidade": "Quixeré",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "redencao": {
+      "cidade": "Redenção",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "reriutaba": {
+      "cidade": "Reriutaba",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "russas": {
+      "cidade": "Russas",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "saboeiro": {
+      "cidade": "Saboeiro",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "salitre": {
+      "cidade": "Salitre",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "santana do acarau": {
+      "cidade": "Santana do Acaraú",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "santana do cariri": {
+      "cidade": "Santana do Cariri",
+      "mesorregiao": "Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "santa quiteria": {
+      "cidade": "Santa Quitéria",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "sao benedito": {
+      "cidade": "São Benedito",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "sao goncalo do amarante": {
+      "cidade": "São Gonçalo do Amarante",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "sao joao do jaguaribe": {
+      "cidade": "São João do Jaguaribe",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "sao luis do curu": {
+      "cidade": "São Luís do Curu",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "senador pompeu": {
+      "cidade": "Senador Pompeu",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "senador sa": {
+      "cidade": "Senador Sá",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "sobral": {
+      "cidade": "Sobral",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "solonopole": {
+      "cidade": "Solonópole",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tabuleiro do norte": {
+      "cidade": "Tabuleiro do Norte",
+      "mesorregiao": "Jaguaribe",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tamboril": {
+      "cidade": "Tamboril",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tarrafas": {
+      "cidade": "Tarrafas",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "taua": {
+      "cidade": "Tauá",
+      "mesorregiao": "Sertões Cearenses",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tejucuoca": {
+      "cidade": "Tejuçuoca",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tiangua": {
+      "cidade": "Tianguá",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "trairi": {
+      "cidade": "Trairi",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "tururu": {
+      "cidade": "Tururu",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "ubajara": {
+      "cidade": "Ubajara",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "umari": {
+      "cidade": "Umari",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "umirim": {
+      "cidade": "Umirim",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "uruburetama": {
+      "cidade": "Uruburetama",
+      "mesorregiao": "Norte Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "uruoca": {
+      "cidade": "Uruoca",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "varjota": {
+      "cidade": "Varjota",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "varzea alegre": {
+      "cidade": "Várzea Alegre",
+      "mesorregiao": "Centro-Sul Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   },
+   "vicosa do ceara": {
+      "cidade": "Viçosa do Ceará",
+      "mesorregiao": "Noroeste Cearense",
+      "estado_sigla": "CE",
+      "estado_nome": "Ceará"
+   }
+}

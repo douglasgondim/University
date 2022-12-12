@@ -1,0 +1,32 @@
+1- Os processos orientados a CPU são aqueles que passam mais tempo executando na CPU do que esperando E/S. Já os orientados a E/S são aqueles que passam mais tempo esperando E/S do que executando.
+
+2- Quando um processo novo é criado, quando dois processos tentam acessar a mesma região crítica, quando ocorre uma interrupção de E/S, quando um processo termina.
+
+3- Os algorítmos de escalonamento preemptivos são aqueles que interrompem processos para que outros possam executar, os não preemptivos, são os que não interrompem.
+
+4- JUSTIÇA quer dizer que todos os processos terão a oportunidade de executar alguma hora, dar a eles uma porção justa da CPU.
+
+APLICAÇÂO DE POLÍTICA é quando se escalona os processos de acordo com alguma condição, como por exemplo, prioridades.
+
+EQUILÍBRIO é que esse algorítmo escalona processos de uma forma que vai ocupar os recursos da máquina o mais equilibrado possível. (Ex: HD, RAM, CPU).
+
+5- A vazão é o número de jobs por segundo que aquele algorítmo é capaz de entregar. 
+O tempo de retorno é uma média do tempo que o processo termina de executar subtraido pelo o tempo que ele chegou na fila.
+A utilização da CPU é se esse algorítmo está utilizando a CPU pelo o máximo de tempo possível, evitando ociosidade da mesma.
+
+6- Voce soma todas as ocorrências de um processo de quando ele terminou menos quando ele chegou na fila e divide pelo o numero de ocorrências daquele processo.
+
+7- 
+
+12- O algoritmo de escalonamento por prioridades escalona os processo de acordo com uma fila de prioridades, onde os processos que possuem maior prioridade ficam em filas mais acima e os de menor prioridade em filas inferiores. O problema é que ele pode levar a starvation de processos de baixa prioridade. Para contornar esse problema, podemos usar a política de envelhecimento de processo, onde um processo de baixa prioridade sobe para a prioridade imediatamente superior a ele a cada x minutos de espera, retornando para a sua prioridade normal após executar.
+
+13- Razões internas é quando o próprio SO decide a ordem de prioridades analisando parametros como tempo de execução do processo, tempo de E/S, requisitos de memória, etc..
+
+Razões externas são por motivos que são externos ao sistema, como importância do processo, hierarquia de usuários, etc...
+
+14- 
+
+
+18- Ele sorteia um ticket e executa o processo que possuir aquele ticket, para dar mais prioridade a um processo, é só dar mais tickets a ele.
+
+19-   

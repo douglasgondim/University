@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block javascript %}
+<script>
+    $(document).ready(function () {
+      var cancelarReservaForm = $(".renovar-emprestimo-form-ajax")
+
+      cancelarReservaForm.submit(function (event) {
+        event.preventDefault();
+        console.log("form not printing")
+
+        var thisForm = $(this)
+        // var actionEndPoint = thisForm.attr("action")
+        // var method = thisForm.attr("method")
+        var formData = thisForm.serializeArray()
+        // console.log(thisForm.attr("action"))
+    
+
+        $.ajax({
+          url: '/emprestimos/',
+          method: 'POST',
+          data: {
+            formData,
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+            },
+          
+          
+          
+          success: function(){
+            console.log("success")
+            // alert("Reserva cancelada com sucesso!")
+            window.location="/emprestimos/" 
+          },
+          error: function(){
+            console.log("error")
+          }
+        })
+
+
+      })
+    })
+
+  </script>
+{% endblock %}
+
+{% block content %}
+{% include 'header.html' %}
+
+
+<div class="d-flex mt-3 justify-content-center">
+    <h3>Meus Emprestimos</h3>
+</div>
+<div class="d-flex px-3 justify-content-center flex-wrap ">
+    {% for livro in emprestimos %}
+        {% include 'livro.html' %}
+    {% endfor %}
+
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,51 @@
+Lista Exercícios 06
+
+1- a)
+
+Procedimento AcharDuplicatas(A[1..n], B[1..n])
+    D <-- intercala(A, B)   t = n
+    j = 1
+    Para i de 1 Até n-1    t = n
+        Se D[i] == D[i+1]
+            C[j] = D[i]
+            Enquanto D[i] == D[i+1]
+                i += 1
+            i += 1
+
+complexidade = 2n
+
+
+b)
+Procedimento AcharDuplicatas(A[1..n], B[1..n])
+    j = 1
+    Para i de 1 Até n  t = n
+        aux = buscaBinaria(A, B[i])  t = log(n)
+        Se aux != NULL
+            C[j] = aux
+            j += 1
+    complexidade = n*log(n)
+
+c)
+Procedimento AcharDuplicatas(A[1..n], B[1..n])
+    k <-- 1
+    para i de 1 até n        t = n
+        para j de 1 até n    t = n 
+            Se A[i] == B[j] 
+                Se C[k] != A[i] 
+                    C[k] <-- A[i]
+                break
+
+complexidade = n2
+
+
+2 - 
+Procedimento Loc-maior
+t = O(n)
+
+Procedimento Flip
+t = O(n)
+
+Procedimento panqueca
+t = O(n2)
+
+

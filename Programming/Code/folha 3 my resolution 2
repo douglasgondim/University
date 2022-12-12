@@ -1,0 +1,238 @@
+	// QUESTAO 1
+
+	INICIO
+		INTEIRO: N1, // número de entrada 1
+		 N2,    // número de entrada 2
+		MMC,    // mínimo múltiplo comum
+	    MDC,    // maximo divisor comum
+		  I;    // variável de controle
+
+		LEIA(N1, N2);
+
+		MMC <- 0;
+		MDC <- 0;
+
+		PARA I DE 1 ATÉ N1 PASSO 1 FAÇA
+			SE N1 MOD I = 0 E N2 MOD I = 0
+				ENTÃO
+					MDC <- I;
+			FIMSE;
+		FIMPARA;
+
+		MMC <- (N1 * N2) / MDC;
+
+		ESCREVA("O MMC DE ", N1, " E ", N2, " É: ", MMC);
+	FIM.
+
+
+	// QUESTAO 2
+
+	INICIO
+		INTEIRO: N1, // número de entrada 1
+		N2, // número de entrada 2
+		MDC, // máximo divisor comum
+		I; // variável de controle
+
+		MDC <- 1;
+
+		LEIA(N1, N2);
+		PARA I DE 1 ATÉ N1 FAÇA
+			SE N1 MOD I = 0 E N2 MOD I = 0
+				ENTÃO
+					MDC <- I;
+			FIMSE;
+		FIMPARA;
+
+		ESCREVA("O MDC de ", N1, " e ", N2, " é: ", MDC);
+	FIM.
+
+	// QUESTÃO 3
+
+	INICIO
+		INTEIRO: DIVIDENDO, DIVISOR, QUOCIENTE;
+		LEIA(DIVIDENDO, DIVISOR);
+		QUOCIENTE = 0;
+
+		ENQUANTO (DIVIDENDO >= DIVISOR) FAÇA
+			DIVIDENDO <- DIVIDENDO - DIVISOR;
+			QUOCIENTE <- QUOCIENTE + 1;
+		FIMENQUANTO;
+
+		ESCREVA(QUOCIENTE);
+	FIM.
+
+
+
+	// QUESTAO 4
+
+	INICIO
+		INTEIRO: BASE, EXPOENTE, RESULTADO, 
+		I;  // variável de controle
+
+
+		LEIA(BASE, EXPOENTE);
+
+		RESULTADO <- BASE;
+		PARA I DE 1 ATÉ EXPOENTE-1 FAÇA
+			RESULTADO = RESULTADO * BASE;
+		FIMPARA;
+
+		ESCREVA(RESULTADO);
+	FIM.
+
+
+
+	// QUESTAO 5
+
+	INICIO
+		INTEIRO: N1, N2, FIBONACCI; I
+		
+		N1 <- 1;
+		N2 <- 1;
+		ESCREVA(N1);
+		ESCREVA(N2);
+
+		PARA I DE 1 ATE 18 FAÇA
+			FIBONACCI = N1 + N2;
+			ESCREVA(FIBONACCI);
+			N1 = N2;
+			N2 = FIBONACCI;
+		FIMPARA;
+	FIM.
+
+
+	// QUESTAO 6
+
+	INICIO
+		INTEIRO: N1,  // menor número intervalo
+		N2,           // maior número intervalo
+		DIVISORES,    // numero de divisores do dado numero
+		I, S;         // variáveis de controle
+
+
+		LEIA(N1, N2);
+
+		PARA I DE N1 ATÉ N2 FAÇA
+			DIVISORES <- 0;
+			PARA S DE 2 ATÉ 10 FAÇA
+				SE I MOD S = 0 E I <> S
+					ENTAO
+						DIVISORES <- DIVISORES + 1;
+				FIMSE;
+			FIMPARA;
+			SE DIVISORES = 0
+				ENTAO
+					ESCREVA(I);
+			FIMSE;
+		FIMPARA;
+	FIM.
+
+
+	// QUESTAO 8
+
+	INÍCIO
+		INTEIRO: SINAL, //sinal da fração
+		I, //variável de controle
+		H; //soma da sequência
+
+		SINAL <- 1;
+		H <- 0;
+
+		PARA I DE 1 ATE 9 PASSO 2 FACA
+			H <- H + 1 / POT(I, 3) * SINAL;
+			SINAL = SINAL * (-1);
+		FIMPARA;
+		ESCREVA(H);
+	FIM.
+
+
+
+
+	// QUESTAO 10
+
+	INICIO
+		INTEIRO: ACUMULADOR,  // soma numeros primos
+		I, // NUMERO 
+		R,  // variáveL de controle 
+		DIVISOR; // numero de divisores de um numero
+
+		ACUMULADOR <- 0;
+		I <- 0;
+
+		REPITA	
+			DIVISOR <- 0;
+			LEIA(I);
+			PARA R DE 2 ATE 9 FAÇA
+				SE I MOD R = 0 E I <> R
+					ENTAO
+						DIVISOR <- DIVISOR + 1;
+				FIMSE;
+			FIMPARA;
+			SE DIVISOR = 0
+				ENTAO
+					ACUMULADOR <- ACUMULADOR + I;
+			FIMSE;
+		ATE I = -1;
+			ESCREVA(ACUMULADOR);
+	FIM.
+
+
+	// QUESTAO 12
+
+	INICIO
+		INTEIRO: NUM,   // número de entrada
+		DIGITO,
+		INVERTIDO;
+		INVERTIDO <- 0;
+		LEIA(NUM);
+		ENQUANTO (NUM <> 0) FACA
+			DIGITO <- NUM MOD 10;
+			INVERTIDO <- INVERTIDO * 10 + DIGITO;
+			NUM = NUM DIV 10
+		FIMENQUANTO;
+		ESCREVA(INVERTIDO)
+	FIM.
+
+
+	// QUESTAO 13
+
+	INICIO
+		INTEIRO: NUM,   // número de entrada
+		DIGITO,
+		INVERTIDO;
+		INVERTIDO <- 0;
+		LEIA(NUM);
+		ORIGINAL <- NUM;
+		ENQUANTO (NUM <> 0) FACA
+			DIGITO <- NUM MOD 10;
+			INVERTIDO <- INVERTIDO * 10 + DIGITO;
+			NUM = NUM DIV 10
+		FIMENQUANTO;
+
+		SE INVERTIDO = ORIGINAL
+			ENTAO
+				ESCREVA("É palíndromo.");
+			SENÃO
+				ESCREVA("Não é palíndromo.");
+		FIMSE;
+	FIM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

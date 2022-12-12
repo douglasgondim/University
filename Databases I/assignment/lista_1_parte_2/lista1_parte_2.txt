@@ -1,0 +1,142 @@
+*/
+Lista 1 - Parte 2
+
+Dupla:
+José Douglas Gondim Soares, 485347,
+Fernanda Costa de Sousa, 485404
+
+1-) 
+
+a)
+
+select nome_aluno from
+
+(select Aluno.matr_aluno from Aluno
+intersect
+select Aluno-Disc.matr_aluno
+from Aluno-Disc
+where Aluno-Disc.semestre = 2018.02)
+join
+Aluno on Aluno-Disc.matr_aluno=Aluno.matr_aluno
+
+
+b)
+
+select ua.nome from unidade_academica ua
+except
+select ua.nome 
+from (unidade_academica ua join departamento d on d.Cod_UA = ua.Cod_UA)
+join dep_curso dc on dc.Cod_dep = d.Cod_dep
+*/
+
+-- 2-)
+--a)
+
+select ua.nome as 'Unidade Acadêmica', 
+count(distinct d.Cod_dep) as 'Número de Departamentos',
+count(distinct c.Cod_curso) as 'Número de Cursos', 
+count(a.matr_aluno) as 'Número de Alunos'
+from (((unidade_academica ua join departamento d on ua.Cod_UA = d.Cod_UA)
+join dep_curso dc on dc.Cod_dep = d.Cod_dep)
+join curso c on c.Cod_curso = dc.Cod_curso)
+join aluno a on a.curso_fk = c.Cod_curso
+group by ua.nome
+order by 4 desc
+
+
+-- b)
+
+select a.nome as 'Aluno', 
+d.nome as 'Disciplina', ad.semestre as 'Semestre',
+ad.ap1 as '1º AP', ad.ap2 as '2º AP', isnull(cast(ad.af as char(2)), '--') as 'AF'
+from ((aluno a join aluno_disc ad on a.matr_aluno = ad.matr_aluno)
+join disciplina d on d.cod_disc = ad.cod_disc)
+join curso c on c.Cod_curso = a.curso_fk
+where c.nome = 'Ciência da Computação'
+order by a.nome, a.matr_aluno
+
+-- c)
+
+select p.nome
+from (unidade_academica ua join departamento d on ua.Cod_UA = d.Cod_UA)
+join professor p on p.lotacao = d.Cod_dep
+where ua.nome = 'Centro de Ciências' and p.matr <> all
+(
+select p.matr
+from (((unidade_academica ua join departamento d on ua.Cod_UA = d.Cod_UA)
+join professor p on p.lotacao = d.Cod_dep)
+join prof_disc pd on pd.Matr_prof = p.matr)
+join disciplina disc on disc.cod_disc = pd.cod_disc
+where (pd.semestre = '2018.1')
+group by p.matr, p.nome
+having sum(disc.quantidade_creditos) >= 8
+
+union
+
+select p.matr
+from (((unidade_academica ua join departamento d on ua.Cod_UA = d.Cod_UA)
+join professor p on p.lotacao = d.Cod_dep)
+join prof_disc pd on pd.Matr_prof = p.matr)
+join disciplina disc on disc.cod_disc = pd.cod_disc
+where pd.semestre = '2018.2'
+group by p.matr, p.nome
+having sum(disc.quantidade_creditos) >= 8
+)
+
+
+-- d)
+
+-- Nós chegamos muito próximo de conseguir realizar a consulta sem precisar praticamente
+-- copiar o código duas vezes. Depois de muitas horas tentando, decidimos pela solução
+-- mais ingênua, que é 1º selecionar todos os alunos do centro de ciência com suas médias globais
+-- e depois fazer a mesma consulta repetida só para calcular o máximo das médias globais.
+-- Com a lista desses alunos e a média global máxima, podemos filtrar a lista com o having.
+
+
+select z.nome as 'Nome' from
+(select a.matr_aluno, a.nome, ((avg(ad.ap1) + avg(ad.ap2))/2) * count(ad.ap1) as mediaNotas, count(ad.ap1) as c1
+from ((((aluno a join aluno_disc ad on a.matr_aluno = ad.matr_aluno)
+join curso c on c.Cod_curso = a.curso_fk)
+join dep_curso dc on dc.Cod_curso = c.Cod_curso)
+join departamento d on d.Cod_dep = dc.Cod_dep)
+join unidade_academica ua on ua.Cod_UA = d.Cod_UA
+where ad.af is null and ua.nome = 'Centro de Ciências'
+group by a.matr_aluno, a.nome
+
+union
+
+select a.matr_aluno, a.nome, ((((avg(ad.ap1) + avg(ad.ap2))/2 + avg(ad.af))/2) * count(ad.af)) as mediaNotas, count(ad.af) as c1
+from ((((aluno a join aluno_disc ad on a.matr_aluno = ad.matr_aluno)
+join curso c on c.Cod_curso = a.curso_fk)
+join dep_curso dc on dc.Cod_curso = c.Cod_curso)
+join departamento d on d.Cod_dep = dc.Cod_dep)
+join unidade_academica ua on ua.Cod_UA = d.Cod_UA
+where ad.af is not null and ua.nome = 'Centro de Ciências'
+group by a.matr_aluno, a.nome) as z
+group by z.matr_aluno, z.nome
+having cast(sum(z.mediaNotas)/sum(c1) as decimal(4,2)) =
+
+(select max(Média_Global) from
+(select z.nome as 'Nome', cast(sum(z.mediaNotas)/sum(c1) as decimal(4,2)) as 'Média_Global' from
+(select a.matr_aluno, a.nome, ((avg(ad.ap1) + avg(ad.ap2))/2) * count(ad.ap1) as mediaNotas, count(ad.ap1) as c1
+from ((((aluno a join aluno_disc ad on a.matr_aluno = ad.matr_aluno)
+join curso c on c.Cod_curso = a.curso_fk)
+join dep_curso dc on dc.Cod_curso = c.Cod_curso)
+join departamento d on d.Cod_dep = dc.Cod_dep)
+join unidade_academica ua on ua.Cod_UA = d.Cod_UA
+where ad.af is null and ua.nome = 'Centro de Ciências'
+group by a.matr_aluno, a.nome
+
+union
+
+select a.matr_aluno, a.nome, ((((avg(ad.ap1) + avg(ad.ap2))/2 + avg(ad.af))/2) * count(ad.af)) as mediaNotas, count(ad.af) as c1
+from ((((aluno a join aluno_disc ad on a.matr_aluno = ad.matr_aluno)
+join curso c on c.Cod_curso = a.curso_fk)
+join dep_curso dc on dc.Cod_curso = c.Cod_curso)
+join departamento d on d.Cod_dep = dc.Cod_dep)
+join unidade_academica ua on ua.Cod_UA = d.Cod_UA
+where ad.af is not null and ua.nome = 'Centro de Ciências'
+group by a.matr_aluno, a.nome) as z
+group by z.matr_aluno, z.nome) as f)
+
+

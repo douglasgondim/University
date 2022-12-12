@@ -1,0 +1,10 @@
+1-)
+
+procedimento constroiPostos(kilometros[1..j], n, L){
+    Se (n == -1){
+        return {0, vazio}
+    }Senão{
+        temp1 = constroiPostos(kilometros[1..j], n-1, L)
+        temp2 = constroiPostos(kilometros[1..j], n-1, L-kilometros[n].d)
+    }
+}

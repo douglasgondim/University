@@ -1,0 +1,15 @@
+Proc prova(V[1..n]){
+    mergesort(V[1..n])
+    int diferenca = v[3] - v[2]
+    x <- v[2]
+    y <- v[3]
+    Para i de 2 até n-2{
+        Se ((V[i+1] - V[i]) < diferenca){
+            diferenca <-- V[i+1] - V[i]
+            x <-- V[i]
+            y <-- V[i+1]
+        }
+    }
+
+    retorna {x: x, y: y}
+}

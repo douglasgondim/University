@@ -1,0 +1,53 @@
+Prova 1 SO
+
+1- Um SO pode ser visto como uma máquina estendida porque ele fornece aos programas de usuário uma interface de hardware mais simples. 
+Ele pode ser visto como um gerenciador de recursos porque ele possibilita o uso eficiente e controlado dos recursos do hardware.
+
+2- Contador de programa, pilha, estado e registradores.
+
+3- Bloqueado: quer dizer que um processo está dormindo, esperando por um evento para acordar.
+
+Pronto: quer dizer que o processo está na fila dos prontos, apenas esperando para ser escalonado e executar.
+
+Executando: o processo está de fato na CPU executando nesse momento.
+
+
+4- Saída normal: o processo finalizou. (Voluntário).
+Saída por erro: o processo encontrou um erro que ja havia sido tratado e finalizou. (Voluntário).
+Erro fatal: houve um erro não tratado e o programa foi finalizado. (Involuntário).
+Cancelamento por outro processo: Um outro processo que tiha permissão o finalizou. kill(). (Involuntário).
+
+
+5- a) Falso, pois no windows, por exemplo, o pai pode deserdar os filho.
+b) Falso, pois o endereçamento do pai e do filho são diferentes desde o início.
+c) Falso, pois esse tipo de sistema operacional tentar abstrair o hardware o menos possível para que o programador tenha mais opções. As característica citadas são sobre memória virtual.
+d) Verdadeiro.
+e) Falso, pois quanto menor o tempo reservado para cada processo, mais trocas de processos irão ocorre, e troca de processos é algo caro (gasta tempo).
+
+6-
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+int main(){
+	pid_t pid;
+	pid = fork();
+	if(pid==0){
+		printf("Sou o processo filho mais velho\n");
+	}else if(pid>0){
+		pid = fork();
+		if(pid==0){
+			printf("Sou o processo filho mais novo\n");
+		}else if(pid>0){
+			printf("Sou o processo original\n");
+		}
+	}
+
+	return 0;
+}
+}
+
+	
+7- Não, pois no produtor, o down(&vazio) precisa vir primeiro que o down(&mutex).
+No consumidor, o down(&cheio) precisa vir primeiro que o down(&mutex) e no lugar de insere_item(item);, deveria ser remove_item(item);.
+ 

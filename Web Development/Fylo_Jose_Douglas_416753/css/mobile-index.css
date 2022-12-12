@@ -1,0 +1,218 @@
+/* José Douglas Gondim Soares, 416753 */
+@media (max-width: 375px){
+  
+    .main-container {
+        width: 375px;
+        margin: 0 auto;
+        background-image: url("../images/bg-intro-mobile.svg");
+    }
+    .page-margins {
+        margin: 0 30px ;
+    }
+    .header {
+        height: 70px;
+    }
+    .button {
+        font-size: 11px;
+        padding: 8px 20px;
+    }
+
+    .sign-in-button {
+        padding: 0;
+        margin-right: 12px;
+    }
+    header img {
+        width: 85px;
+    }
+    .main-highlight {
+        margin-top: 40px;
+        background-position: top;
+        background-size: 80%;
+        padding-top: 200px;
+    }
+    .highlight-description-area {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .highlight-description-area h2 {
+        font-size: 30px; 
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+    .highlight-description-area p {
+        font-size: 14px;
+    }
+    .highlight-description-area button {
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+
+    .grey-background {
+        background:rgba(128, 128, 128, .05);
+        border-radius: 80px;
+        padding: 0; 
+        margin: 0px; 
+        margin-top: 200px;
+        transform: rotate(-10deg) skew( -10deg) translateX(-0) rotateZ(10deg) rotateX(10deg) scaleX(1.7) scaleY(1.2);
+    }
+    .advantages-area {
+        transform: scaleX(0.588235294) scaleY(0.833333333) rotateX(-10deg) rotateZ(-10deg) translateX(0px) skew(10deg) rotate(10deg);
+    }
+    .text-motivation {
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .text-motivation h2, p {
+        margin-bottom: 35px;
+    }
+    .text-motivation h2 {
+        font-size: 25px;
+        line-height: 40px;
+        width: 80%;
+    }
+    .text-motivation p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .advantages-images {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .image-holder {
+        margin-top: 100px;
+    
+    }
+
+
+    .connect-with-apps {
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .connect-text {
+        width: 100%;
+        text-align: center;
+    }
+    .connect-text h2 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .connect-text p {
+        font-size: 14px;
+    }
+    .app-banners {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offset {
+        position: static; 
+    }
+    .app-banner {
+        width: 205px;
+        margin: 14px 0;
+        background: hsl(106, 0%, 98%);
+        display: inline-block;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .banner-image {
+        background: white;
+        margin-bottom: 3px;
+    }
+    .banner-image img {
+        object-fit: contain;
+        height: 100px;
+        width: 100px;
+    }
+    .banner-description {
+        background: white;
+        overflow: hidden;
+        height: 150px;
+        padding: 8px 20px;
+        padding-bottom: 20px;
+    }
+    .banner-description h2 {
+        font-size: 20px;
+    }
+    .banner-description p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .start-using-fylo {
+        margin: auto;
+        margin-top: 200px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .start-using-fylo h3 {
+        font-size: 22px;
+    }
+    .start-using-fylo p {
+        font-size: 14px;
+    }
+    .start-using-fylo button {
+        padding: 18px 70px;
+        margin: 20px 0;
+    }
+
+    .footer {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 35px;
+    
+    }
+    
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-right {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 60px;
+    
+    }
+    .footer input {
+        height: 30px;
+        width: 100%;
+        
+    }
+    
+    .footer button {
+        padding: 0px 60px;
+        font-size: 12px;
+        margin: 20px 0;
+        height: 35px;
+        align-self: flex-end;
+    
+    }
+    .footer p {
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        
+    }        
+    .footer img {
+        width: 150px;
+    
+    }
+
+    #email-icon, #phone-icon {
+        margin: 8px 0;
+    
+    }
+    
+
+}

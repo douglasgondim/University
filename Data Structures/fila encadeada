@@ -1,0 +1,31 @@
+José Douglas Gondim Soares, 485347
+
+Toda fila F possui um ponteiro para o primeiro Nó inicio[F] e outro para o último  Nó final[F].
+
+Todo Nó x possui uma chave elemento e um ponteiro prox que aponta para o nó seguinte.
+
+Algoritmo filaVazia(F){
+    Se (inicio[F] = NULL) retorna V
+    Senão retorna F
+}
+
+
+Algoritmo incluirFila(F, x){
+    Se (filaVazia(F)){
+        inicio[F] ← x
+        final[F] ← x
+    }Senão{
+        prox[final[F]] ← x
+        final[F] ← x
+    }
+}
+
+Algoritmo removerFila(F){
+    Se(filaVazia(F)){
+        retorna "Erro"
+    }Senão{
+        Nó aux ← inicio[F]
+        inicio[F] ← prox[inicio[F]]
+        retorna aux
+    }
+}

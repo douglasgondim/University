@@ -1,0 +1,27 @@
+1-	Define Operating System and list five services that are offered by a modern operating system.
+
+Ans: an operating system is a system software that manages computer hardware and software and provides services to computer programs.
+
+Program execution - loads program into memory and executes it.
+
+I/O operations - it manages the comunication between user and device drivers, read or write any file or any i/o device.
+
+File system manipulation - The OS organizes files on the HD through paths (addresses) that we call directories and it provides the user with an interface for manipulating files.
+
+Error handling - The OS contantly checks for possible errors in CPU, memory, i/o devices, etc... it also takes appropriate actions to correct those errors and ensure correct computing.
+
+Process ordering - The Operating System is responsible for deciding what processes run, when they'll run, and in what order they will be processed. (Scheduler).
+
+Protection - the OS is also responsible for protecting the files stored in the computer through passwords and memory cells management. It prevents malicious programs from invading other programs memory.
+
+
+2-	The operating system can be seen as a resource manager or as an extended machine. Explain those different points of view and name a feature of each.
+
+Ans: The operating system can be seen as a resource manager because it is responsible for distributing the finite available resources in the computer between the competing programs. That is very important in order to optmize responsiveness.
+It is also responsible to manage what we call an extended machine which means that we don't have to worry about hardware technicalities and we can abstract what we do to work on problems at a high level stand point.
+
+Resource manager - Scheduler is the line of process in order and time of execution to control what instructions go into the CPU.
+Extended Machine - Abstraction, to render a video without ever thinking about the bits that comprise it, for example.
+
+
+3- Os sistemas monoprogramáveis 

@@ -1,0 +1,81 @@
+--- Bubble Sort ---
+
+// joga o maior para o final e vai ate a posição n-1.
+
+Procedimento BubbleSort(A[1..n])
+    Para i de 1 até n-1
+        Para j de 1 até n-i
+            Se A[j] > A[j+1]
+                Troca(j, j+1)
+    Retorna A[1..n]
+
+
+
+--- Insertion Sort ---
+
+// tem um array odernado do lado esquerdo e joga desordenado para posição correta.
+
+Procedimento insertionSort(A[1..n])
+    Para i de 2 até n
+        j = i
+        Enquanto j > 1 e A[j] < A[j-1]
+            troca(j, j-1)
+            j--
+    Retorna A[1..n]
+                
+
+
+--- Merge Sort ---
+
+Procedimento intercalação:
+Consiste em criar um vetor auxiliar, intercalar i e j enquanto ambos existirem.
+quando restar apenas i ou j, adiciona-se o restante do vetor ao final do vetor auxiliar.
+
+
+Procedimento intercalação(V_1[1..m], V_2[1..n])
+    i = 1
+    j = 1
+    k = 1
+    Equanto (i <= m e j <= n)
+        Se (V_1[i] < V_2[j])
+            A[k] = V_1[i]
+            i++
+            k++
+        Senão
+            A[k] = V_2[j]
+            j++
+            k++
+    
+    Enquanto (i <= m)
+        A[k] = V_1[i]
+        i++
+        k++
+
+    Equanto (j <= n)
+        A[k] = V_2[j]
+        j++
+        k++
+    
+    V[1..n] <-- A[1..n]
+
+
+Procedimento mergesortRec(V[1..n])
+    Se V[1..n].length == 0 Retorna V[1..n]
+    k <-- V[1..n].length / 2
+    Retorna intercalação(mergesortRec(V[1..k], mergesortRec[V[k+1..n]]))
+
+
+--- Quick Sort ---
+
+Procedimento Partição(A[1..n])
+    pivot <-- A[1]
+    j <-- 2
+    k <-- n
+
+    Enquanto (j <= k )
+        Se (A[j] > pivot e A[k] <= pivot)
+            troca(j,k)
+        Se (A[j] <= pivot) j++
+        Se (A[k] > pivot) k--
+
+    troca(1,k)

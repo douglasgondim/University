@@ -1,0 +1,112 @@
+// Aluno: José Douglas Gondim Soares - CC1
+
+
+// 1- a)
+
+"Minha terra tem palmeiras,
+ Onde canta o Sabiá;
+ As aves que aqui gorjeiam,
+ Não gorjeiam como lá.
+
+ Nosso céu tem mais estrelas,
+ Nossas várzeas têm mais flores,
+ Nossos bosques têm mais vida,
+ Nossa vida mais amores." (Canção do Exílio - Gonçalves Dias)
+
+INICIO
+	LOGICO: minha_Terra, tem_Palmeiras, canta_Sabia, aves_gorjeiam_como_minha_Terra, ceu_mais_Estrelas,
+	varzeas_mais_Flores, bosque_mais_Vida, vida_mais_Amores;
+
+	LEIA(minha_Terra); // VERDADEIRO ou FALSO.	
+
+	SE (minha_Terra = VERDADEIRO)
+		ENTAO
+			INICIO
+				tem_Palmeiras <- VERDADEIRO; // minha terra tem palmeiras
+				canta_Sabia <- VERDADEIRO;   // onde canta o sabiá
+				aves_gorjeiam_como_minha_Terra <- VERDADEIRO; // as aves que aqui gorjeiam, nao gorjeiam como lá.
+				ceu_mais_Estrelas <- VERDADEIRO; // nosso céu tem mais estrelas
+				varzeas_mais_Flores <- VERDADEIRO; // nossas várzeas têm mais flores
+				bosque_mais_Vida <- VERDADEIRO; // nossos bosques têm mais vida
+				vida_mais_Amores <- VERDADEIRO; // nossa vida mais amores
+			FIM;
+		SENAO
+			INICIO
+				tem_Palmeiras <- FALSO;  // nunca se é dito isso sobre a terra que ele está.
+				canta_Sabia <- FALSO;    // nunca se é dito isso sobre a terra que ele está.
+				aves_gorjeiam_como_minha_Terra <- FALSO;
+				ceu_mais_Estrelas <- FALSO;
+				varzeas_mais_Flores <- FALSO;
+				bosque_mais_Vida <- FALSO;
+				vida_mais_Amores <- FALSO;
+			FIM;
+	FIMSE;
+FIM.
+
+----------------------------------------------------------------------------------------
+// 1- b)
+
+"Quando o segundo sol chegar
+Para realinhar as órbitas dos planetas
+Derrubando com assombro exemplar
+O que os astrônomos diriam se tratar
+De um outro cometa." (O Segundo Sol - Cássia Eller)
+
+
+INICIO
+	LOGICO: segundo_Sol, realinhar_orbitas_Planetas, derrubar_outro_Cometa;
+
+	segundo_Sol <- VERDADEIRO;
+
+	Enquanto (segundo_Sol) FACA  // quando o segundo sol chegar. (ele vai chegar!)
+		realinhar_orbitas_Planetas <- VERDADEIRO; // para realinhar as orbitas dos planetas
+		derrubar_outro_Cometa <- VERDADEIRO;      // Derrubando com assombro... de um outro cometa.
+	FIMENQUANTO;
+FIM.
+
+----------------------------------------------------------------------------------------
+
+// 1- c)
+
+"E, enquanto não me descobres,
+ os mundos vão navegando,
+ nos ares certos do tempo,
+ até não se sabe quando..." (Timidez - Cecília Meireles)
+
+INICIO
+	LOGICO: descobre, mundos_navegando_ares_certos_Tempo;
+
+	descobre <- FALSO;
+
+	ENQUANTO (descobre) FACA  // enquanto não me descobres (até não se sabe quando).
+		mundos_navegando_ares_certos_Tempo <- VERDADEIRO;  // os mundos vao navegando nos ares certos do tempo.
+	FIMENQUANTO;
+FIM.
+
+
+----------------------------------------------------------------------------------------
+
+1- d)
+
+"É preciso amar as pessoas
+ Como se não houvesse amanhã
+ Porque se você parar pra pensar
+ Na verdade não há" (Pais e Filhos - Legião Urbana)
+
+INICIO
+	LOGICO: amanha, amar_as_Pessoas, parar_pra_Pensar;
+
+	amanha <- FALSO;  
+
+	SE (amanha) FACA // como se não houvesse amanhã.
+		amar_as_Pessoas = VERDADEIRO; // é preciso amar as pessoas
+	FIMSE;
+
+	parar_pra_Pensar <- VERDADEIRO;
+
+	SE (parar_pra_Pensar)  // se parar pra pensar
+		ENTAO
+			amanha <- FALSO;  // na verdade nao há.
+	FIMSE;
+FIM.
+

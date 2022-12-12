@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block javascript %}
+
+<script>
+    $(document).ready(function () {
+      var cancelarReservaForm = $(".autenticar-usuario-form-ajax")
+
+      cancelarReservaForm.submit(function (event) {
+        event.preventDefault();
+        // console.log("form not printing")
+
+        var thisForm = $(this)
+        // var actionEndPoint = thisForm.attr("action")
+        // var method = thisForm.attr("method")
+        var formData = thisForm.serializeArray()
+        // console.log(thisForm.attr("action"))
+    
+
+        $.ajax({
+          url: '/redefinir-senha/',
+          method: 'POST',
+          data: {
+            formData,
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+            },
+          
+          
+          
+          success: function(){
+            console.log("success")
+            // alert("Senha alterada com sucesso!")
+            window.location="/login/" 
+          },
+          error: function(){
+            console.log("error")
+          }
+        })
+
+
+      })
+    })
+
+  </script>
+{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-center vertical-center m-3 ">
+    <form class="autenticar-usuario-form-ajax">
+        <h2 class="d-flex justify-content-center mt-2">Autenticação / Redefinição de Senha</h2>
+        <div class="form-group">
+            <label for="inputAddress">Email</label>
+            <input type="text" name="email" class="form-control" id="inputAddress" placeholder="ex. joao_silva@gmail.com">
+        </div>
+
+        <div class="form-row mt-4">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">CPF (somente dígitos)</label>
+                <input type="text" name="cpf" class="form-control" id="inputEmail4" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">RG</label>
+                <input type="text" name="RG"class="form-control" id="inputPassword4" placeholder="">
+            </div>
+
+            
+
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Digite sua nova senha</label>
+            <input type="password" name="senha" class="form-control" id="inputAddress" placeholder="">
+        </div>
+
+
+
+
+        <button type="submit" class="btn btn-primary px-4">Enviar</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='/login'">Voltar</button>
+
+
+    </form>
+</div>
+
+<style>
+    .vertical-center {
+        min-height: 100%;
+        /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh;
+        /* These two lines are counted as one :-)       */
+
+        display: flex;
+
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+</style>
+{% endblock %}

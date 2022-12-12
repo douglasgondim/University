@@ -1,0 +1,61 @@
+///////////////////////
+Obs: Estruturas de dados
+
+linha: {
+    int id;
+    double a;
+    double b;
+}
+
+ponto: {
+    double x, y;
+}
+
+///////////////////////
+
+Procedimento acharAreaVisivel(L[1..n]){
+    mergesort(L[1..n]); // ordena linhas em ordem crescente de gradiente
+   
+    lista <-- [1..n];
+    int fim, i, j;
+   
+    ponto inicio <-- [1..n];
+    ponto final <-- [1..n];
+    ponto intersec;
+
+    lista[0] <-- 0;
+    inicio[0] <-- {-inf, -inf};
+    final[0] <-- {+inf, +inf};
+
+    fim <-- 0;
+
+    Para (i de 1 até N){
+        Enquanto(Verdade){
+            j <-- lista[fim];
+            intersec <-- acharIntersecção(L[1..n], i, j);
+            Se (intersec.x > inicio[fim].x) break;
+            fim--;
+        }
+        final[fim] <-- intersec;
+        fim++;
+        lista[fim] <-- i;
+        inicio[fim] <-- intersec;
+        final[fim] <-- {+inf, +inf};
+    }
+
+    retorna lista;
+
+}
+
+Algoritmo acharIntersecção(L[1..n], i, j){
+    ponto I;
+
+    Se (L[i].m == L[j].m) {
+      imprime('Erro. Linhas paralelas.');
+      finalizaPrograma();
+   }Senão{
+        I.x <-- (L[j].c - L[i].c) / (L[i].m - L[j].m);
+        I.y <-- L[i].m * I.x + L[i].c;
+        retorna I;
+   }
+}

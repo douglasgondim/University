@@ -1,0 +1,18 @@
+Para comprimir: --compress
+Para descomprimir: --decompress
+
+Obs: Tive uma GRANDE dificuldade em escrever a árvore Huffman no arquivo. 
+Não consegui escrever a árvore, por mais que visse a sua aula VÁRIAS vezes e ter pesquisado
+no stack overflow também, nada deu certo pra escrever a árvore.
+
+Fiquei triste porque acho essa uma habilidade importante de se aprender. Algum dia vou precisar escrever
+uma árvore em um arquivo.
+
+A minha solução foi escrever o vetor de ocorrências de caracteres (frequência)
+no arquivo compactado. Então quando vou descompacta-lo, eu reconstruo a árvore de Huffman, assim como 
+fiz a primeira vez na compressão.
+
+O lado bom é que em alguns arquivos, o meu compressor conseguiu diminuir o tamanho do arquivo original
+mais até do que a sua implementação. E eu acho que não é computacionalmente custoso reconstruir a árvore
+para descompactar o arquivo.
+

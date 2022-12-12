@@ -1,0 +1,13 @@
+José Douglas Gondim Soares
+
+Consulta 1
+π Aluno.Nome, Disciplinas.Nome ((Aluno ⟕ Aluno.MatrNr = Cursa_Disciplina.MatrNr Cursa_Disciplina) ⟕ Cursa_Disciplina.Cod_disc = Disciplinas.Cod_disc Disciplinas)
+
+Consulta 2
+π Professor.Nome, Disciplinas.Nome (Professor ⟕ Professor.Matr_Prof = Disciplinas.Professor Disciplinas)
+
+Consulta 3
+π Disciplinas.Cod_disc, pre_req.Pre_req (Disciplinas ⟕ Disciplinas.Cod_disc = pre_req.Disciplina pre_req)
+
+Desafio
+π Disciplinas.Nome, prerequisitos.Nome ((π Disciplinas.Nome, pre_req.Pre_req (Disciplinas ⟕ Disciplinas.Cod_disc = pre_req.Disciplina pre_req)) ⟕ pre_req.Pre_req = prerequisitos.Cod_disc  ρ prerequisitos Disciplinas)

@@ -1,0 +1,79 @@
+1-)
+
+a)
+
+Procedimento caminhosCurtos(Grafo, origem){
+    Para (cada vertice V no grafo){
+        V.dist <- infinito;
+        V.anterior <- Nulo;
+    }
+    origem.dist <- 0;
+    C <- conjunto de todos os vertices do Grafo;
+    Enquanto (tiver elementos em C){
+        M <- vértice em C com menor .dist;
+        remove M de C;
+        Para (cada vizinho V de M){
+            aux <- M.dist + distancia(M, V);
+            Se (aux < V.dist e calcNumVerticesNE(Grafo, origem, V) <= 1){
+                V.dist <- aux;
+                V.anterior <- M;
+            }
+        }
+    }
+    retorna anterior[]
+
+}
+
+Algoritmo calcNumVerticesNE(Grafo, origem, V){
+    int numVerticesNE <- 0
+    Enquanto(V != origem){
+        Se(V.naoExistente){
+            numVerticesNE++;
+        }
+        V <- V.anterior;
+
+    }
+    retorna numVerticesNE;
+}
+
+b)
+Algoritmo calcNumVerticesNE
+
+linhas 4-9:
+No pior caso ele precisa passar por todos os vertices, o que leva tempo O(|V|).
+
+Procedimento caminhosCurtos
+
+linhas 2-5: O(|V|)
+
+linha 6: O(1)
+linha 7: O(|V|)
+
+linha 8: O(|V|), linha 11: O(|V|), linha 13: O(|V|) = O(|V|*|V|*|V|)
+
+tempo final do Algoritmo: O(|V|^3).
+
+
+
+2-)
+
+a)
+
+Procedimento ocupaLaboratorio(A[1..n]){    // A = Atividades
+    Para (i de 1 até n){
+        i.prioridadeSelecao <- (i.duracao / numConflitos(i));
+    }
+    mergesort(A[1..n]);   // ordem de .prioridadeSelecao
+    solucao <- [A[1]]
+    Para (j de 2 até n){
+        adiciona <- true;
+        Para (k de 1 até tam(solucao)){
+            Se(j conflita com k){  // se atividade conflita com alguma já da soluçao.
+                adiciona <- false;
+            }
+        }
+        Se (adiciona == true){
+            solucao.addFinal(j);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+analisador_semantico/context/*.class
+analisador_semantico/syntaxtree/*.class
+analisador_semantico/visitors/*.class
+
+analisador_semantico/syntaxtree/ParseException.java
+analisador_semantico/syntaxtree/ParserTokenManager.java
+analisador_semantico/syntaxtree/SimpleCharStream.java
+analisador_semantico/syntaxtree/TokenMgrError.java
+analisador_semantico/syntaxtree/Parser.java
+analisador_semantico/syntaxtree/ParserConstants.java
+analisador_semantico/syntaxtree/Token.java
+*.class
+?/

@@ -1,0 +1,8 @@
+<div class="d-flex mt-3 justify-content-center">
+    <form class="d-flex form-inline w-50 justify-content-center " action="/pesquisar/" method="POST">
+        {% csrf_token %}
+        <input class="d-flex flex-grow-1 form-control mr-sm-2" type="search" name="pesquisa" value= "{{ ultimo_titulo_procurado }}" placeholder="Digite um título, autor ou palavra-chave..."
+            aria-label="Search">
+        <button class="btn btn-outline-info my-2 sm-0" type="submit">Buscar</button>
+    </form>
+</div>

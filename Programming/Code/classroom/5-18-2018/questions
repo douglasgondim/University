@@ -1,0 +1,17 @@
+/*
+1-) Crie um algoritmo que leia um vetor n números inteiros e gere um segundo ventor cujo as posições pares são o dobro, e as ímpares são o triplo. (Use alocação dinâmica).
+
+2-) Leia n números inteiros em um vetor, depois gere um segundo vetor do mesmo tamanho, de maneira invertida.(Use alocação dinâmica).
+
+3-) Crie uma matriz n x m, leia os valores para essa matriz, depois inverta os valores na vertical. (Use alocação dinâmica)
+
+4-) Questão MAX ULTRA;
+Aloque dinamicamente ma matriz N xN, depois inverta os valores na diagonal principal.
+
+5-) Questão MAX ULTRA - ULTRA;
+Aloque dinamicamente ma matriz N xN, depois inverta os valores na diagonal secundaria.
+
+int *n;
+n = (int*) malloc(sizeof(int)*tam);
+
+*/

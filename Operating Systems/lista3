@@ -1,0 +1,32 @@
+1- Condição de corrida é quando dois processos estão competindo pelos mesmos recursos.
+
+2- Uma região crítica é um espaço da memória que é compartilhado com mais de um processo. Exclusão mútua é garantir que nunca dois processos estão ao mesmo tempo dentro da região crítica.
+
+3- O problema é que dar esse tipo de poder ao usuário é algo muito arriscado, já que cada processo quer ter a CPU exclusivamente para si.
+
+4- Espera ocupada é quando um procesos está esperando por alguma E/S mas ele permanece ocupando a CPU, o que impede que outro processo execute. (desperdicio de recurso).
+
+5- Porque uma variável compartilhada (global) é uma região crítica, e não s epode resolver um problema de região crítica com outra região crítica.
+
+6- Ela garante a exclusão mútua, no entanto, se os processos forem diferentes em tempo de execução, um deles vai acabar tendo que esperar pelo outro, ou seja, um processo que não está na região crítica está bloqueando outro que está tentando entrar.
+
+7- Porque quando um processo está dormindo ele não está ocupando CPU, ou seja, outros processos podem usar a CPU.
+
+8- 
+
+
+9- 
+
+10- 
+
+11-
+
+12- 
+
+13-
+
+14-
+
+15-
+
+

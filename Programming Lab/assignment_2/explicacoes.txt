@@ -1,0 +1,10 @@
+1. Eu uso um MAC para programar e não tive nenhum problema em usar a biblioteca chrono, mesmo sem importar nada.
+Mas no primeiro trabalho, deu problema no seu computador e você a importou mas eu não vi como, então preferi não importa-la 
+porque no meu computador está rodando normalmente.
+
+2. Achei estranho como o KMP está se comportando de maneira mais lenta nos casos que não são o pior caso. 
+Essa diferença aumenta mais ainda usando a flag -O3 na compilação. Eu acho que o calculo dos tamanhos m e n são os 
+responsáveis por essa diferença, mas não vi uma forma de executar sem calcular esses tamanhos.
+Como esse problema foi comentado na aula, eu vou assumir que esse comportamento pode acontecer porque o KMP
+é muito mais complexo e pode ter esse efeito em algumas instâncias.
+

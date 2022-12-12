@@ -1,0 +1,16 @@
+
+#triangulo superior a diagonal secundaria
+for(i=0;i<tamanho_da_matriz;i++){
+	for(j=0;j<tamanho_da_matriz - i - 1;j++){
+		printf("argumentos",matriz[i][j])
+	}
+}
+
+
+
+#triangulo inferior a diagonal secundaria
+for(i=0;i<tamanho_da_matriz;i++){
+	for(j=0;j>tamanho_da_matriz - i - 1;j++){
+		printf("argumentos",matriz[i][j])
+	}
+}

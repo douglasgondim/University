@@ -1,0 +1,155 @@
+// page 46
+
+// 2.3
+
+INÍCIO
+	REAL: A, B, C, DELTA, X1, X2;
+	LEIA(A, B, C)
+	DELTA <-- POT(B, 2) - 4 * A * C
+	SE (DELTA > 0)
+		ENTÃO
+			INÍCIO
+				X1 <- (-B + RAD(DELTA)) / (2 * A);
+				X2 <- (-B - RAD(DELTA)) / (2 * A);
+				ESCREVA(X1, X2);
+			FIM;
+		SENÃO 
+			SE (DELTA = 0);
+				ENTÃO
+					INÍCIO
+						X1 <- -B / (2 * A);
+						ESCREVA(X1);
+					FIM;
+				SENÃO
+					ESCREVA("As raízes são imaginárias");
+			FIMSE;
+	FIMSE;
+FIM.
+
+
+// 2.4
+
+INÍCIO
+	REAL: H, // altura
+		  P; // peso
+	CARACTER: S; // sexo
+	LEIA (H, S);
+	SE (S = "M")
+		ENTÃO P <- (72,7 * h) - 58;
+		SENÃO P <- (62.1 * H) - 44.7;
+	FIMSE;
+	ESCREVA("Peso ideal = ", P)
+FIM.
+
+// 2. 3
+
+INÍCIO
+	INTEIRO: ANO_NASC, ANO_ATUAL, IDADE;
+	LEIA(ANO_NASC, ANO_ATUAL);
+	IDADE <- (ANO_ATUAL - ANO-NASC)
+	SE IDADE >=18
+		ENTÃO
+			ESCREVA ("Você já pode votar e tirar CNH");
+		SENÃO
+			SE (IDADE >= 16) E (IDADE < 18)
+				ENTÃO
+					ESCREVA("Você pode votar mas não tirar CNH");
+				SENÃO
+					SE (IDADE < 16)
+						ENTÃO
+							ESCREVA("Você não pode votar nem tirar CNH.")
+					FIMSE;
+			FIMSE;
+	FIMSE;
+FIM.
+
+
+// page 47
+
+// 2.10
+
+INÍCIO
+	REAL: PESO, ALTURA, IMC;
+	LEIA(PESO, ALTURA);
+	IMC <- PESO / POT(ALTURA, 2);
+	SE (IMC >= 30)
+		ENTÃO
+			ESCREVA("Você está obeso(a)!");
+		SENÃO
+			SE (IMC >= 25) E (IMC < 30)
+				ENTÃO
+					ESCREVA("Você está acima do peso!");
+				SENÃO
+					SE (IMC >= 18,5) E (IMC < 25)
+						ENTÃO
+							ESCREVA("Você está no peso normal!");
+						SENÃO
+							ESCREVA("Você está abaixo do peso");
+					FIMSE;
+			FIMSE;
+	FIMSE;
+FIM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

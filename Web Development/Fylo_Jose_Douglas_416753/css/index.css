@@ -1,0 +1,325 @@
+/* José Douglas Gondim Soares, 416753 */
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px;
+}
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(0, 0%, 17%);
+}
+
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+     
+}
+.main-container p {
+    color: hsl(0, 0%, 50%);
+    line-height: 25px;
+
+}
+.page-margins {
+    margin: 0 100px;
+    line-height: 20px;
+}
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    background: transparent;
+}
+.big-button {
+    background-color: hsl(163, 95%, 43%);
+    border-radius: 4px;
+  }
+.sign-in-button {
+    padding: 0;
+    margin-right: 30px;
+    
+}
+
+.main-highlight {
+    margin-top: 80px;
+    background-image: url("../images/illustration-main.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    align-items: flex-end;
+    height: 450px;
+}
+.highlight-description-area {
+    width: 510px;
+}
+.highlight-description-area h2, p {
+    margin-bottom: 30px;
+}
+
+.highlight-description-area h2 {
+    font-size: 50px; 
+    line-height: 60px;
+}
+.highlight-description-area p {
+    line-height: 25px;
+}
+.highlight-description-area button {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 90px;
+}
+
+.grey-background {
+    background:rgba(128, 128, 128, .05);
+    border-radius: 50px;
+    transform: rotate(15deg) skew(-35deg) translateX(-30px);
+    flex-direction: column;
+    padding: 150px 500px 180px 500px; 
+    margin: 0px -300px; 
+    margin-top: 300px;
+}
+.advantages-area {
+    transform: translateX(30px) skew(35deg) rotate(-15deg);
+}
+
+.text-motivation {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.text-motivation h2, p {
+    margin-bottom: 25px;
+}
+.text-motivation p {
+    width: 480px;
+    margin: auto;
+}
+.advantages-images {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-images p {
+    text-align: center;
+    line-height: 30px;
+    
+}
+.image-holder {
+    background-repeat: no-repeat;
+    width: 250px;
+    background-position: 50% 0%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 150px;
+
+}
+
+.devices {
+    background-image: url("../images/icon-devices.svg");
+}
+.security {
+    background-image: url("../images/icon-security.svg");
+}
+.collaboration {
+    background-image: url("../images/icon-collaboration.svg");
+}
+
+.connect-with-apps {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.connect-text {
+    width: 450px;
+}
+.connect-text h2 {
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.connect-text p {
+    line-height: 25px;
+}
+.app-banners {
+    width: 700px;
+    z-index: 1;
+}
+.offset {
+    position: relative;
+    bottom: 50px;  
+}
+.app-banner {
+    width: 205px;
+    margin: 8px ;
+    background: hsl(106, 0%, 98%);
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px hsl(106, 0%, 90%);
+}
+.banner-image {
+    background:white;
+    margin-bottom: 3px;
+}
+.banner-image img {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    background: white;  
+    
+}
+.banner-description {
+    background: white;
+    overflow: hidden;
+    height: 150px;
+    padding: 8px 20px;
+    padding-bottom: 20px;
+}
+.banner-description h2 {
+    padding: 8px;
+    font-size: 24px;
+}
+.banner-description p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.start-using-fylo {
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    width: 650px;
+    
+}
+.start-using-fylo button {
+    padding: 20px 100px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.footer {
+    font-family: 'Raleway', sans-serif;
+    background: hsl(243, 87%, 12%);
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.footer-left {
+    width: 100%;
+}
+.footer-right {
+    width: 80%;
+    display: flex;
+    justify-content: space-between
+
+}
+.footer input {
+    height: 45px;
+    width: 300px;
+    border-radius: 4px;
+    border: 0px;
+    padding: 0;
+    font-size: 19px;
+    
+}
+
+.footer button {
+    padding: 0px 100px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 12px;
+    height: 45px;
+
+
+}
+.footer h6 {
+    margin-left: 0;
+}
+
+.footer li {
+    margin: 20px 0;
+}
+.footer p {
+    color: white;
+    font-size: 20px;
+    width: 480px;
+    margin-top: 30px;
+    font-weight: 600;
+    line-height: 35px
+    
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer h6 {
+    color: white;
+    font-weight: 700;
+}
+
+.menu-1, .menu-2, .menu-3 {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    padding: 5px;   
+    overflow: hidden;
+
+}
+
+.footer img {
+    width: 200px;
+    object-fit: contain;
+
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#email-icon {
+    background: url("../images/icon-email.svg");
+}
+#phone-icon {
+    background: url("../images/icon-phone.svg");
+}
+
+#email-icon, #phone-icon {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 35px;
+
+}
+

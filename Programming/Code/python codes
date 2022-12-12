@@ -1,0 +1,223 @@
+# calculates the LCM of two given numbers
+# smaller number than divides those 2 numbers
+
+# n1 = int(input("enter number"))
+# n2 = int(input("enter number"))
+# i = 1
+
+# while i <= n1 * n2:
+# 	if i % n1 == 0 and i % n2 == 0:
+# 		print(i)
+# 		break
+# 	i = i + 1
+
+# calculates GCD of a number
+
+# n1 = int(input("n1: "))
+# n2 = int(input("n2: "))
+# gcd = 0
+
+# for i in range (1, n1 + 1):
+# 	if n1 % i == 0 and n2 % i == 0:
+# 		gcd = i
+
+# lcm = (n1 * n2) / gcd 
+# print("The GCD is: ", gcd)
+# print("The LCM is: ", lcm)
+
+
+
+
+# QUESTION 3
+
+# dividend = 40
+
+# divisor = 8
+# quocient = 0
+
+# while dividend >= divisor:
+# 	dividend = dividend - divisor
+# 	quocient = quocient + 1
+
+# print(quocient)
+
+
+
+
+# QUESTION 4
+
+# base = int(input("base: "))
+# exponent =int(input("exponent: "))
+# result = base
+
+# for i in range(1, exponent):
+# 	result = result * base
+
+# print(result)
+
+# QUESTAO 5
+
+# N1 = 1
+# N2 = 1
+# print(N1)
+# print(N2)
+
+# for i in range(18):
+# 	FIBONACCI = N1 + N2
+# 	print(FIBONACCI)
+# 	N1 = N2
+# 	N2 = FIBONACCI
+
+
+# QUESTAO 6
+
+# n1 = 4
+# n2 = 19
+
+# for i in range(n1, n2 + 1):
+# 	divisors = 0
+# 	for s in range(2, 10):
+# 		if i % s == 0 and i != s:
+# 			divisors = divisors + 1
+# 	if divisors == 0:
+# 		print(i)
+	
+
+
+# QUESTAO 7
+# taller = 0
+# shorter = 300
+# men_Counter = 0
+# men_height_accumulator = 0
+# total_height_accumulator = 0
+
+# height = int(input("height:"))
+# sex = str(input("sex: "))
+
+# for i in range(1, 5):
+# 	height = int(input("height: "))
+# 	sex = str(input("sex: "))
+# 	total_height_accumulator = total_height_accumulator + height
+# 	if height > taller:
+# 		taller = height
+# 	if height < shorter:
+# 		shorter = height
+# 	if sex == "m":
+# 		men_Counter = men_Counter + 1
+# 		men_height_accumulator = men_height_accumulator + height
+
+# print("The taller one is: ", taller)
+# print("the shorter one is", shorter)
+# print("The median of womens height is: ", (total_height_accumulator - men_height_accumulator) / (6 - men_Counter))
+# print("The number of men is: ", men_Counter)
+# print("The percentual difference between men and women is: ")
+
+
+
+
+# QUESTAO 8
+# h = 0
+# signal = 1
+# for i in range(1, 20, 2):
+# 	h = h + ( 1 / (i**3)) * signal
+# 	signal = signal * (-1)
+
+# print(h)
+
+
+# QUESTAO 10
+
+# accumulator = 0
+# i = 0
+# while i != -1:
+# 	divisor = 0
+# 	i = int(input("Enter number: "))
+# 	if i == -1:
+# 		accumulator = accumulator + 1
+# 	for r in range(2, 10):
+# 		if i % r == 0 and i != r:
+# 			divisor = divisor + 1
+# 	if divisor == 0:
+# 		accumulator = accumulator + i
+# print(accumulator)
+ 
+
+
+# Questao 11
+
+# m = 3
+# power = m ** 3
+# acm = 0
+
+# for i in range(m, power + 1):
+# 	if i % 2 != 0 and acm < power:
+# 		acm = acm + i
+# 		print(i)
+
+
+#QUESTAO 12
+
+# num = int(input("input number: "))
+# while num > 0: 
+# 	remainder = num % 10
+# 	print(remainder)
+# 	num = int((num - remainder) / 10)
+
+
+
+# QUESTAO 12 - outra
+
+# invertido = 0
+# n = int(input())
+
+# while n != 0:
+# 	digito = n % 10
+# 	invertido = invertido * 10 + digito
+# 	n = n // 10
+# print(invertido)
+
+
+# QUESTAO 13
+
+invertido = 0
+n = int(input())
+original = n
+
+while n != 0:
+	digito = n % 10
+	invertido = invertido * 10 + digito
+	n = n // 10
+
+if invertido == original:
+	print("Is palindrome")
+else:
+	print("Not palindrome")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

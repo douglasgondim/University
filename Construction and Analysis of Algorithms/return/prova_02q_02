@@ -1,0 +1,18 @@
+PE = [2,10,25,50,75] //posições em ordem crescente
+respostas = []
+
+Procedimento achaElementos(PE[b..m], V[i..j]){
+    Se(b < m) retorna
+    Se(b = m) {
+        resposta.addFinal(selecao-DC(PE[k], V[i..j]))
+        retorna
+    }
+    k = (m-b)/2
+    valor <-- selecao-DC(PE[k], V[i..j])
+    resposta.addFinal(valor)
+    p <-- particao(valor, V[i..j])        // essa particao coloca o pivot no lugar e altera o vetor original.
+    
+    achaElementos(PE[b, k], V[i..p])
+    achaElementos(PE[k+1, m], V[p+1..j]) 
+
+}
